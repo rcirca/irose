@@ -85,7 +85,7 @@
       <OutputFile>$(OutDir)$(TargetName).dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
-      <ImportLibrary>lib/$(Platform)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>../../lib/$(Platform)/$(Configuration)/$(TargetName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
       <Message>Importing Borland Import Libraries....</Message>

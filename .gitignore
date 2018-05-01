@@ -1,11 +1,10 @@
 [Bb]in/
-
 [Ll]ib/
-
 [Oo]bj/
-
+[Oo]bjs/
 [Gg]ame/
+[Dd]ebug/
+[Rr]elease/
 
 *.vcxproj.user
-
 *.sdf

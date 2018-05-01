@@ -45,7 +45,8 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IROSE_ROOT)\bin\$(Platform)\$(Configuration)\Client\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IROSE_ROOT)\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    </PostBuildEventUseInBuild>
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
@@ -54,6 +55,9 @@
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">TRose</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">d_TRose</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PostBuildEventUseInBuild />
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -66,7 +70,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <OmitFramePointers>false</OmitFramePointers>
-      <AdditionalIncludeDirectories>.\;.\interface;..\engine\include;..\3rdParty\include;..\TGameCtrl;..\tools\TriggerVFS\include;..\tools\TriggerInfo\src;..\3rdParty\include\lua401;..\Common;..\3rdParty\dx90csdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\interface;$(IROSE_ROOT)\engine\include;$(IROSE_ROOT)\3rdParty\include;$(IROSE_ROOT)\TGameCtrl;$(IROSE_ROOT)\tools\TriggerVFS\include;$(IROSE_ROOT)\tools\TriggerInfo\src;$(IROSE_ROOT)\3rdParty\include\lua401;$(IROSE_ROOT)\Common;$(IROSE_ROOT)\3rdParty\dx90csdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -153,13 +157,10 @@
       <ImportLibrary>$(IROSE_ROOT)\lib\$(Platform)\$(Configuration)\TRose.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Message>Copying to Folder</Message>
-      <Command>copy /y "%IROSE_ROOT%\bin\$(Platform)\Release\Client\TRose.exe" "C:\Program Files (x86)\Ruff-Rose/TRose.exe"
-copy /y "%IROSE_ROOT%\bin\$(Platform)\Release\Client\TGameCtrl_r.dll" "C:\Program Files (x86)\Ruff-Rose/TGameCtrl_r.dll"
-copy /y "%IROSE_ROOT%\bin\$(Platform)\Release\Client\\TriggerInfo.dll" "C:\Program Files (x86)\Ruff-Rose/TriggerInfo.dll"
-copy /y "%IROSE_ROOT%\bin\$(Platform)\Release\Client\TriggerVFS.dll" "C:\Program Files (x86)\Ruff-Rose/TriggerVFS.dll"
-copy /y "%IROSE_ROOT%\bin\$(Platform)\Release\Client\znzin.dll" "C:\Program Files (x86)\Ruff-Rose/znzin.dll"
-</Command>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>
