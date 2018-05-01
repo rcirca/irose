@@ -31,7 +31,7 @@
 #pragma comment (lib, "znzin.lib")
 
 #ifdef _DEBUG
-	#pragma comment (lib, "..\\lib\\Win32\\Release\\util_d.lib")
+	#pragma comment (lib, "..\\lib\\Win32\\Debug\\util_d.lib")
 #else
 	//#pragma comment (lib, "util\\util_r.lib")
 	#pragma comment (lib, "..\\lib\\Win32\\Release\\util_r.lib")
