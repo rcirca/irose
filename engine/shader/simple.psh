@@ -1,0 +1,24 @@
+ps.1.1        // version instruction
+//-------------------------------------------------
+// $Header: /ENGINE/shader/simple.psh 1     03-11-30 8:21p Zho $
+//
+// by zho@korea.com
+//-------------------------------------------------
+def c2, .30, .59, .11, 1.0 // luminance filter
+tex t0
+tex t1
+tex t2 // normalization cubemap
+tex t3 // shadowmap
+//mul r0, v0, t0
+//mul r0, r0, t2
+//mov r0, t2
+
+//mul r1, v0, t0
+//mul r0, v0, t0
+mov r0, t0
+mul r0, r0, t1
+
+//dp3 r0, r1, c2 // use luminance filte (black and white film)
+//mov r0, t0
+//mov r0, v0
+

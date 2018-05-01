@@ -1,0 +1,50 @@
+//
+// @file version_info.rc
+// @brief VersionInfo resource script
+// @author Jiho Choi (zho@korea.com)
+// @version 1.0
+// @date    02-feb-2004
+//
+// $Header: /engine/include/zz_channel_x.h 1     03-11-30 8:05p Zho $
+// $History: zz_channel_x.h $
+//
+
+#include "winver.h"			  // extract from windows header
+#include "./include/zz_version_info.inc"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION ZZ_VERSION_NO_COMMA
+ PRODUCTVERSION ZZ_VERSION_NO_COMMA
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS VS_FF_DEBUG
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "트리거 소프트(주)"
+#ifdef _DEBUG
+            VALUE "FileDescription", "znzin.dll debug"
+#else
+            VALUE "FileDescription", "znzin.dll release"
+#endif
+            VALUE "FileVersion", ZZ_VERSION_STRING
+            VALUE "InternalName", "znzin.dll"
+            VALUE "LegalCopyright", "Copyright (C) TriggerSoft Corporation."
+            VALUE "OriginalFilename", "znzin.dll"
+            VALUE "ProductName", "ZNZIN DLL"
+            VALUE "ProductVersion", ZZ_VERSION_STRING
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END

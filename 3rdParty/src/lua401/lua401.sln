@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua401", "lua401.vcproj", "{BA6F6435-0C4E-4CBD-9F8E-6F8ED604A58E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lualib401", "lualib401\lualib401.vcproj", "{402710C6-026A-410C-88AF-031A3E43D42D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		CanCheckoutShared = true
+		SolutionUniqueID = {6318B616-593F-4E45-A713-7A97D050B891}
+		SccProjectUniqueName1 = lua401.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+		SccProjectUniqueName2 = lualib401\\lualib401.vcproj
+		SccLocalPath2 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection2 = lualib401\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BA6F6435-0C4E-4CBD-9F8E-6F8ED604A58E}.Debug.ActiveCfg = Debug|Win32
+		{BA6F6435-0C4E-4CBD-9F8E-6F8ED604A58E}.Debug.Build.0 = Debug|Win32
+		{BA6F6435-0C4E-4CBD-9F8E-6F8ED604A58E}.Release.ActiveCfg = Release|Win32
+		{BA6F6435-0C4E-4CBD-9F8E-6F8ED604A58E}.Release.Build.0 = Release|Win32
+		{402710C6-026A-410C-88AF-031A3E43D42D}.Debug.ActiveCfg = Debug|Win32
+		{402710C6-026A-410C-88AF-031A3E43D42D}.Debug.Build.0 = Debug|Win32
+		{402710C6-026A-410C-88AF-031A3E43D42D}.Release.ActiveCfg = Release|Win32
+		{402710C6-026A-410C-88AF-031A3E43D42D}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{aa87ed25-c816-45b0-bbce-0a1426c8dff0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\CLS_Thread">
+      <UniqueIdentifier>{da3f6574-59c8-4dee-b958-be13b7fb7446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CLS_List">
+      <UniqueIdentifier>{185dddd3-b4fe-4f1e-a97e-8019eecc5bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUMs">
+      <UniqueIdentifier>{c817b4f0-bedf-4125-ac1e-f7a73a457a74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CLS_API.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SHO_LS_LIB.H">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdAFX.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CLS_SQLThread.h">
+      <Filter>Source Files\CLS_Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="CLS_Account.h">
+      <Filter>Source Files\CLS_List</Filter>
+    </ClInclude>
+    <ClInclude Include="CLS_Client.h">
+      <Filter>Source Files\CLS_List</Filter>
+    </ClInclude>
+    <ClInclude Include="CLS_Server.h">
+      <Filter>Source Files\CLS_List</Filter>
+    </ClInclude>
+    <ClInclude Include="CAS_GUMS.h">
+      <Filter>Source Files\GUMs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SHO_LS_LIB.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CLS_SQLThread.cpp">
+      <Filter>Source Files\CLS_Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="CLS_Account.cpp">
+      <Filter>Source Files\CLS_List</Filter>
+    </ClCompile>
+    <ClCompile Include="CLS_Client.cpp">
+      <Filter>Source Files\CLS_List</Filter>
+    </ClCompile>
+    <ClCompile Include="CLS_Server.cpp">
+      <Filter>Source Files\CLS_List</Filter>
+    </ClCompile>
+    <ClCompile Include="CAS_GUMS.cpp">
+      <Filter>Source Files\GUMs</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

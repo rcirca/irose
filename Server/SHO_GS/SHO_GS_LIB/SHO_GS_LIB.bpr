@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="BC_Lib\SHO_GS_LIB.lib"/>
+    <OBJFILES value="BC_OUTs\GS_ThreadACCEPT.obj BC_OUTs\GS_ThreadWORKER.obj 
+      BC_OUTs\ZoneSECTOR.obj BC_OUTs\CRegenAREA.obj BC_OUTs\GS_ListUSER.obj 
+      BC_OUTs\GS_ThreadZONE.obj BC_OUTs\GS_USER.obj BC_OUTs\LIB_gsMAIN.obj 
+      BC_OUTs\IO_STB.obj BC_OUTs\CCommand.obj BC_OUTs\CEconomy.obj 
+      BC_OUTs\CInventory.obj BC_OUTs\CItem.obj BC_OUTs\CObjAI.obj 
+      BC_OUTs\CQuest.obj BC_OUTs\CRandom.obj BC_OUTs\CUserDATA.obj 
+      BC_OUTs\IO_AI.obj BC_OUTs\IO_Motion.obj BC_OUTs\Calculation.obj 
+      BC_OUTs\CObjCHAR.obj BC_OUTs\ZoneFILE.obj BC_OUTs\CGameOBJ.obj 
+      BC_OUTs\CObjITEM.obj BC_OUTs\ETC_Math.obj BC_OUTs\GS_ThreadSQL.obj 
+      BC_OUTs\OBJECT.obj BC_OUTs\ZoneLIST.obj BC_OUTs\CCharDATA.obj 
+      BC_OUTs\CHotICON.obj BC_OUTs\AI_Action.obj BC_OUTs\AI_Condition.obj 
+      BC_OUTs\CAI_FILE.obj"/>
+    <RESFILES value=""/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <PACKAGES value=""/>
+    <PATHCPP value=".;..\..\Client\Common;..\..\Client\AI_LIB"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <LINKER value="TLib"/>
+    <USERDEFINES value="_DEBUG;__SERVER"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="SHO_GS_LIB.bpf"/>
+    <INCLUDEPATH value="..\..\Client\AI_LIB;$(BCB)\include;$(BCB)\include\vcl;D:\SDK\MySQL\include\;..\..\Client\Util;..\..\LIB_Util;..\..\LIB_Server;..\..\Client\Common;..\Common"/>
+    <LIBPATH value="..\..\Client\AI_LIB;..\..\Client\Common;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <LISTFILE value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\..\Client\AI_LIB -I$(BCB)\include -I$(BCB)\include\vcl 
+      -ID:\SDK\MySQL\include\. -I..\..\Client\Util -I..\..\LIB_Util 
+      -I..\..\LIB_Server -I..\..\Client\Common -I..\Common -src_suffix cpp 
+      -D_DEBUG -D__SERVER -boa"/>
+    <CFLAG1 value="-vGc -vGt -vGd -Od -H=$(BCB)\lib\vcl50.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k 
+      -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-N2BC_OUTs -N0BC_OUTs -$YD -$W -$O- -v -JPHNE -M"/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-l&quot;D:\Project2003\OnlineRPG\Server\SHO_GS_LIB\BC_Lib\&quot; /P32"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="$(OBJFILES)"/>
+    <ALLLIB value="cg32.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1042
+CodePage=949
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=13
+Item0=..\..\Client\AI_LIB;$(BCB)\include;$(BCB)\include\vcl;D:\SDK\MySQL\include\;..\..\Client\Util;..\..\LIB_Util;..\..\LIB_Server;..\..\Client\Common;..\Common
+Item1=$(BCB)\include;$(BCB)\include\vcl;D:\SDK\MySQL\include\;..\..\Client\Util;..\..\LIB_Util;..\..\LIB_Server;..\..\Client\Common;..\Common
+Item2=$(BCB)\include;$(BCB)\include\vcl;D:\SDK\MySQL\include\;..\..\Client\Util;D:\Project2003\OnlineRPG\LIB_Util;..\..\LIB_Server;..\..\Client\Common;..\Common
+Item3=$(BCB)\include;$(BCB)\include\vcl;D:\SDK\MySQL\include;..\..\Client\Util;..\..\LIB_Util;..\..\LIB_Server;..\..\Client\Common;..\Common
+Item4=$(BCB)\include;$(BCB)\include\vcl;..\..\Client\Util;..\..\LIB_Util;..\..\LIB_Server;..\..\Client\Common;..\Common
+Item5=$(BCB)\include;$(BCB)\include\vcl;..\..\Client\Util;..\..\LIB_Util;..\..\LIB_Server;..\..\Client\Common;D:\Project2003\OnlineRPG\Server\Common
+Item6=$(BCB)\include;$(BCB)\include\vcl;..\..\Client\Util;..\..\LIB_Util;..\..\LIB_Server;..\..\Client\Common
+Item7=$(BCB)\include;$(BCB)\include\vcl;..\..\Client\Util;D:\Project2003\OnlineRPG\LIB_Util;..\..\LIB_Server;..\..\Client\Common
+Item8=$(BCB)\include;$(BCB)\include\vcl;..\..\Client\Util;..\..\LIB_Server;..\..\Client\Common
+Item9=$(BCB)\include;$(BCB)\include\vcl;..\..\Client\Util;..\..\LIB_Server;D:\Project2003\OnlineRPG\Client\Common
+Item10=$(BCB)\include;$(BCB)\include\vcl;..\..\Client\Util;..\..\LIB_Server
+Item11=$(BCB)\include;$(BCB)\include\vcl;D:\Project2003\OnlineRPG\Client\Util;D:\Project2003\OnlineRPG\LIB_Server
+Item12=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=..\..\Client\AI_LIB;..\..\Client\Common;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\..\Client\Common;$(BCB)\lib\obj;$(BCB)\lib
+Item2=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=3
+Item0=_DEBUG;__SERVER
+Item1=_DEBUG,__SERVER
+Item2=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=BC_OUTs
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=BC_Lib\
+Item1=BC_Lib
+
+[HistoryLists\hIBPIOutputDir]
+Count=2
+Item0=D:\Project2003\OnlineRPG\Server\SHO_GS_LIB\BC_Lib\
+Item1=BC_Lib
+
+[HistoryLists\hlTlibPageSize]
+Count=2
+Item0=0x0020
+Item1=0x0010
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=1
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

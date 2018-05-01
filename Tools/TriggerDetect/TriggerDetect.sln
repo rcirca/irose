@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TriggerDetect", "TriggerDetect.vcproj", "{9B08B68B-B8D7-4251-BB7B-9FEBC3020776}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectName0 = \u0022$/Tools/TriggerDetect\u0022,\u0020YOBBAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = true
+		SolutionUniqueID = {65EA596E-30D8-44BE-A591-9E698E9D43CC}
+		SccProjectUniqueName1 = TriggerDetect.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9B08B68B-B8D7-4251-BB7B-9FEBC3020776}.Debug.ActiveCfg = Debug|Win32
+		{9B08B68B-B8D7-4251-BB7B-9FEBC3020776}.Debug.Build.0 = Debug|Win32
+		{9B08B68B-B8D7-4251-BB7B-9FEBC3020776}.Release.ActiveCfg = Release|Win32
+		{9B08B68B-B8D7-4251-BB7B-9FEBC3020776}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

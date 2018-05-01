@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="TGameCtrl">
+      <UniqueIdentifier>{2104fb04-b4b8-46bb-b93c-47cb4fad741f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TGameCtrl\Tree">
+      <UniqueIdentifier>{ce0b78b9-d955-4999-a0c8-a94210ddf8bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{6cd66081-eb2c-4ef9-9464-5560f8435ffe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionEvent.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionListenerList.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="CToolTip.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ITControl.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="JComboBox.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="JContainer.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="JLetter.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="JListBox.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="JString.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="JStringParser.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="JTable.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceMgr.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="SinglelineString.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="SplitHangul.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TabbedPane.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TAnimation.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TButton.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TCandidateWindow.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TCandidateWindowHanja.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TCandidateWindowList.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TCaption.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TCheckBox.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TComboBox.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TCommand.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TCommandQ.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TContainer.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TContainerItem.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TControlMgr.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TDefaultListCellRenderer.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TDefaultTreeModel.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TDefaultTreeNode.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TDefaultTreeNodeRenderer.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TDialog.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TEditBox.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TFrame.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TGuage.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TImage.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TListBox.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TListCellRenderer.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TMsgBox.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TObject.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TPane.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TPushButton.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TRadioBox.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TRadioButton.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TreePath.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TScrollBar.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TScrollBarType.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TScrollBox.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TScrollBoxType.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TSplitString.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TStatic.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TStatusBar.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="WinCtrl.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ZListBox.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TGameCtrl.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="TIme2.cpp">
+      <Filter>TGameCtrl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionEvent.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionListenerList.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="CToolTip.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="IActionListener.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="IListCellRenderer.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="IScrollModel.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ITControl.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ITDraw.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ITFont.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ITreeModel.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ITreeNode.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ITreeNodeRenderer.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ITSound.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="JComboBox.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="JContainer.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="JLetter.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="JListBox.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="JString.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="JStringParser.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="JTable.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceMgr.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="SinglelineString.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="SplitHangul.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TabbedPane.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TAnimation.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TButton.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TCandidateWindow.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TCandidateWindowHanja.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TCandidateWindowList.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TCaption.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TCheckBox.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TComboBox.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TCommand.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TCommandQ.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TContainer.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TContainerItem.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TControlMgr.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TDefaultListCellRenderer.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TDefaultTreeModel.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TDefaultTreeNode.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TDefaultTreeNodeRenderer.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TDialog.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TEditBox.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TFrame.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TGuage.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TImage.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TListBox.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TListCellRenderer.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TMsgBox.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TObject.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TPane.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TPushButton.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TRadioBox.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TRadioButton.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TreePath.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TScrollBar.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TScrollBarType.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TScrollBox.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TScrollBoxType.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TSplitString.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TStatic.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TStatusBar.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="WinCtrl.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ZListBox.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TGameCtrl.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="TIme2.h">
+      <Filter>TGameCtrl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TGameCtrl.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

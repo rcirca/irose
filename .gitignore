@@ -1,0 +1,11 @@
+[Bb]in/
+
+[Ll]ib/
+
+[Oo]bj/
+
+[Gg]ame/
+
+*.vcxproj.user
+
+*.sdf

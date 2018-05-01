@@ -1,0 +1,1 @@
+implib ..\SHO_GS_DLL.lib ..\SHO_GS.dll

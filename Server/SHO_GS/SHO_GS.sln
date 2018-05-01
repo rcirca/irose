@@ -1,0 +1,88 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHO_GS_LIB", "SHO_GS_LIB\SHO_GS_LIB.vcproj", "{782AF9C9-40B2-4844-BE58-D73710823F16}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHO_GS_DLL", "SHO_GS_DLL\SHO_GS_DLL.vcproj", "{48E6A734-BEC4-4317-9102-67A9A3C030E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{782AF9C9-40B2-4844-BE58-D73710823F16} = {782AF9C9-40B2-4844-BE58-D73710823F16}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHO_GS_API", "SHO_GS_API\SHO_GS_API.vcproj", "{CA5E0E69-9B39-4A23-856E-48651CCA5F77}"
+	ProjectSection(ProjectDependencies) = postProject
+		{782AF9C9-40B2-4844-BE58-D73710823F16} = {782AF9C9-40B2-4844-BE58-D73710823F16}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccProjectName0 = \u0022$/7HeartsOnline/Server/SHO_GS\u0022,\u0020ULCAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = true
+		SolutionUniqueID = {396E5784-85EC-4B78-90AB-50B1BB97C19B}
+		SccProjectUniqueName1 = SHO_GS_LIB\\SHO_GS_LIB.vcproj
+		SccProjectName1 = \u0022$/7HeartsOnline/Server/SHO_GS/Sho_gs_lib\u0022,\u0020JTCAAAAA
+		SccLocalPath1 = SHO_GS_LIB
+		CanCheckoutShared = true
+		SccProjectUniqueName2 = SHO_GS_DLL\\SHO_GS_DLL.vcproj
+		SccProjectName2 = \u0022$/7HeartsOnline/Server/SHO_GS/SHO_GS_DLL\u0022,\u0020VLCAAAAA
+		SccLocalPath2 = SHO_GS_DLL
+		CanCheckoutShared = true
+		SccProjectUniqueName3 = SHO_GS_API\\SHO_GS_API.vcproj
+		SccProjectName3 = \u0022$/7HeartsOnline\u0022,\u0020NLCAAAAA
+		SccLocalPath3 = ..\\..
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection3 = Server\\SHO_GS\\SHO_GS_API\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Compaq Debug = Compaq Debug
+		Debug = Debug
+		Debug_AllInONE = Debug_AllInONE
+		Debug2 = Debug2
+		Release = Release
+		Xeon Debug = Xeon Debug
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Compaq Debug.ActiveCfg = Compaq Debug|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Compaq Debug.Build.0 = Compaq Debug|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Debug.ActiveCfg = Debug|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Debug.Build.0 = Debug|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Debug_AllInONE.ActiveCfg = Debug_AllInONE|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Debug_AllInONE.Build.0 = Debug_AllInONE|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Debug2.ActiveCfg = Debug2|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Debug2.Build.0 = Debug2|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Release.ActiveCfg = Release|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Release.Build.0 = Release|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Xeon Debug.ActiveCfg = Xeon Debug|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.Xeon Debug.Build.0 = Xeon Debug|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Compaq Debug.ActiveCfg = Compaq Debug|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Compaq Debug.Build.0 = Compaq Debug|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Debug.ActiveCfg = Debug|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Debug.Build.0 = Debug|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Debug_AllInONE.ActiveCfg = Debug2|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Debug_AllInONE.Build.0 = Debug2|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Debug2.ActiveCfg = Debug2|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Debug2.Build.0 = Debug2|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Release.ActiveCfg = Release|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Release.Build.0 = Release|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Xeon Debug.ActiveCfg = Xeon Debug|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.Xeon Debug.Build.0 = Xeon Debug|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Compaq Debug.ActiveCfg = Debug|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Compaq Debug.Build.0 = Debug|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Debug.ActiveCfg = Debug|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Debug.Build.0 = Debug|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Debug_AllInONE.ActiveCfg = Debug_AllInONE|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Debug_AllInONE.Build.0 = Debug_AllInONE|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Debug2.ActiveCfg = Debug|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Debug2.Build.0 = Debug|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Release.ActiveCfg = Release|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Release.Build.0 = Release|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Xeon Debug.ActiveCfg = Debug|Win32
+		{CA5E0E69-9B39-4A23-856E-48651CCA5F77}.Xeon Debug.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

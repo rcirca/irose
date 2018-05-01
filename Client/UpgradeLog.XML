@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="@Client">
+</Property><Property Name="Solution File" Value="F:\Triggersoft\Irose Source\Client\@Client.sln">
+</Property><Property Name="Date" Value="Friday, October 23, 2015">
+</Property><Property Name="Time" Value="11:24 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="@Client.sln" Description="File successfully backed up as F:\Triggersoft\Irose Source\Client\@Client.sln.old">
+</Event><Event ErrorLevel="3" Project="Client" Source="Client.vcproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="@Client.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="@Client.sln" Description="Converted">
+</Event></UpgradeLog>

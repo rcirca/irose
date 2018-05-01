@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcproj", "{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "engine\Engine.vcproj", "{2DB22E6E-3606-4BFB-AA63-419054756943}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = Client\\Client.vcproj
+		SccProjectName0 = \u0022$/Client\u0022,\u0020TQCAAAAA
+		SccLocalPath0 = Client
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		libdebug|Default = libdebug|Default
+		librelease|Default = librelease|Default
+		Release|Default = Release|Default
+		VR_Debug|Default = VR_Debug|Default
+		VR_Release|Default = VR_Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.Debug|Default.ActiveCfg = Debug|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.Debug|Default.Build.0 = Debug|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.libdebug|Default.ActiveCfg = VR_Debug|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.libdebug|Default.Build.0 = VR_Debug|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.librelease|Default.ActiveCfg = VR_Debug|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.librelease|Default.Build.0 = VR_Debug|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.Release|Default.ActiveCfg = Release|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.Release|Default.Build.0 = Release|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.VR_Debug|Default.ActiveCfg = VR_Debug|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.VR_Debug|Default.Build.0 = VR_Debug|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.VR_Release|Default.ActiveCfg = VR_Release|Win32
+		{96388B47-C3CC-4E5E-9074-3E9CAF330F9C}.VR_Release|Default.Build.0 = VR_Release|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.Debug|Default.ActiveCfg = Debug|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.Debug|Default.Build.0 = Debug|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.libdebug|Default.ActiveCfg = Release|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.libdebug|Default.Build.0 = Release|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.librelease|Default.ActiveCfg = Release|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.librelease|Default.Build.0 = Release|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.Release|Default.ActiveCfg = Release|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.Release|Default.Build.0 = Release|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.VR_Debug|Default.ActiveCfg = Debug|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.VR_Debug|Default.Build.0 = Debug|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.VR_Release|Default.ActiveCfg = Release|Win32
+		{2DB22E6E-3606-4BFB-AA63-419054756943}.VR_Release|Default.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

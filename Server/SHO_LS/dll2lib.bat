@@ -1,0 +1,1 @@
+implib ..\..\LIB_BC\SHO_LS_DLL.lib ..\SHO_LS.dll

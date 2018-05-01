@@ -1,0 +1,52 @@
+ps_1_1
+//------------------------------------
+// v0 : ambient term + diffuse
+// v1 : specular term
+// t0 : color map
+// t1 : normal map
+// t2 : normalization cubemap
+//
+// $Header: /ENGINE/shader/bumpmap.psh 1     03-11-30 8:21p Zho $
+// by zho@korea.com
+//------------------------------------
+def c0, .5, .5, .5, .5
+def c1, 2, 2, 2, 2
+def c2, .30, .59, .11, 1.0 // luminance filter
+def c3, .7, .7, .7, .2 // not used
+def c4, .0, .0, .5, 1 // not used
+
+tex t0                   // sample texture
+tex t1                   // sample normal
+tex t2                   // sample normalization cube map ( half light vector )
+// disble shadow map
+//tex t2                  // sample shadow map
+
+mov r0, t2_bx2           // get light vector to r0
+dp3_sat r0, r0, t1_bx2   // dot(normal,light)
+mov r0, t2_bx2
+//mov r0, v0
+//mul r0, r0, t0
+//mov r0, t1
+
+//mul r1,r0,r0            //  2nd power   
+//mul r0,r1,r1            //  4th power      
+//mul r1,r0,r0            //  8th power      
+//mul r0,r1,r1            // 16th power
+//mul r1,r0,r0            //  8th power      
+//mul r0,r1,r1            // 16th power
+
+//assemble final color
+//mul r0, r0, v0
+//add r0, v0, r0
+//mul r0, v0, r0
+
+//mul r0, v0, t0
+//add_d2 r0, r0, v0
+//dp3 r0, r0, c2 // use luminance filte (black and white film)
+// r0 = r0 + v0 * t0
+//mov r1, c2
+//mul r0, r0, t0
+//dp3_sat r0, r1, t1_bx2
+//mad r0, v0, t0, r0
+//mul r0, t0, r0
+//mov r0, t1
