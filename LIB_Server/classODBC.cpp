@@ -1,4 +1,3 @@
-
 #include <windows.h>
 #include <tchar.h>
 #include <crtdbg.h>
@@ -219,9 +218,26 @@ bool classODBC::Connect (char *szDSN, char *szUserName, char *szPassword)
 					(UCHAR*)szDSN,		(SWORD)strlen( (char*)szDSN),
 					(UCHAR*)szUserName, (SWORD)strlen( (char*)szUserName ),
 					(UCHAR*)szPassword, (SWORD)strlen( (char*)szPassword ));
-	if ( (m_RetCode != SQL_SUCCESS) && (m_RetCode != SQL_SUCCESS_WITH_INFO) )
-		return false;
+	if ((m_RetCode != SQL_SUCCESS) && (m_RetCode != SQL_SUCCESS_WITH_INFO)) {
+		SQLCHAR state[5 + 1];
+		SQLINTEGER err_code;
+		SQLCHAR err_message[255];
 
+		SQLRETURN ret = SQLGetDiagRec(
+			SQL_HANDLE_DBC,
+			m_hDBC1,
+			1,
+			state,
+			&err_code,
+			err_message,
+			256,
+			NULL
+
+		);
+		g_LOG.CS_ODS(0xffff, "SQLConnect() failed with error state: %s", (char*)state);
+		g_LOG.CS_ODS(0xffff, (char*)err_message);
+		return false;
+	}
 	m_RetCode = ::SQLAllocHandle (SQL_HANDLE_STMT, m_hDBC1, &m_hSTMT1);
 	if ( (m_RetCode != SQL_SUCCESS) && (m_RetCode != SQL_SUCCESS_WITH_INFO) )
 		return false;

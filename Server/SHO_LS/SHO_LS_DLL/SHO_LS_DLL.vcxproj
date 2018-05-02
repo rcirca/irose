@@ -65,7 +65,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\LIB_Server;..\..\..\Client\Util;..\..\..\LIB_Util;..\..\..\Server\SHO_GS\SHO_GS_LIB\Common;..\..\..\Server\SHO_GS\SHO_GS_LIB;..\..\..\Server\SHO_GS\SHO_GS_LIB\Ai_lib;..\..\..\Server\SHO_GS\SHO_GS_LIB\srv_COMMON;..\..\..\Server\SHO_GS\SHO_GS_DLL;..\..\..\Common;..\..\..\Client\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\LIB_Server;..\..\..\Client\Util;..\..\..\LIB_Util;..\..\..\Server\SHO_GS\SHO_GS_LIB\Common;..\..\..\Server\SHO_GS\SHO_GS_LIB;..\..\..\Server\SHO_GS\SHO_GS_LIB\Ai_lib;..\..\..\Server\SHO_GS\SHO_GS_LIB\srv_COMMON;..\..\..\Server\SHO_GS\SHO_GS_DLL;$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_USRDLL;SHO_LS_DLL_EXPORTS;__SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>

@@ -5,6 +5,8 @@
 - Visual studio 2010 Premium/Professional/Ultimate SP1
 - Visual studio 2017 Community (Optional)
 - Ruff Rose v799 client
+- SQL Server 2014+
+- SQL Server Management Studio
 
 ### Build
 - Clone the repository
