@@ -114,7 +114,7 @@ UINT CLogin::Process( UINT uiMsg, WPARAM wParam, LPARAM lParam )
 	if( !IsVision())
 		return Ret;
 	//Dagnarus
-	g_pCApp->SetCaption( CStr::Printf("Project Alpha [Login]"));
+	g_pCApp->SetCaption( CStr::Printf("Tsuki Online [Login]"));
 	CWinCtrl*  pCtrl	= NULL;
 	CTEditBox* pEditBox = NULL;
 

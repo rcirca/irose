@@ -1,26 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
+    <ProjectConfiguration Include="debug|Win32">
+      <Configuration>debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{98F25AF9-BDDD-462D-9514-9A18FE2E2692}</ProjectGuid>
-    <RootNamespace>Client</RootNamespace>
+    <RootNamespace>client</RootNamespace>
+    <ProjectName>client</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
@@ -28,40 +29,40 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\$(Platform)\$(Configuration)\Client\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IROSE_ROOT)\bin\$(Platform)\$(Configuration)\Client\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IROSE_ROOT)\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">..\bin\$(Platform)\$(Configuration)\Client\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">..\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(IROSE_ROOT)\bin\$(Platform)\$(Configuration)\Client\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(IROSE_ROOT)\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='release|Win32'">false</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
     </PostBuildEventUseInBuild>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">TRose</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">d_TRose</TargetName>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release|Win32'">TRose</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">d_TRose</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
     <PostBuildEventUseInBuild />
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
     <Midl>
-      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_debug;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
@@ -70,10 +71,10 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <OmitFramePointers>false</OmitFramePointers>
-      <AdditionalIncludeDirectories>.\;.\interface;$(IROSE_ROOT)\engine\include;$(IROSE_ROOT)\3rdParty\include;$(IROSE_ROOT)\TGameCtrl;$(IROSE_ROOT)\tools\TriggerVFS\include;$(IROSE_ROOT)\tools\TriggerInfo\src;$(IROSE_ROOT)\3rdParty\include\lua401;$(IROSE_ROOT)\Common;$(IROSE_ROOT)\3rdParty\dx90csdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\interface;$(IROSE_ROOT)\engine\include;$(IROSE_ROOT)\3rdParty\include;$(IROSE_ROOT)\TGameCtrl;$(IROSE_ROOT)\tools\TriggerVFS\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\3rdParty\include\lua401;$(IROSE_ROOT)\Common;$(IROSE_ROOT)\3rdParty\dx90csdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;TRIGGERINFO_STATIC;_debug;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadeddebug</RuntimeLibrary>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
@@ -86,21 +87,21 @@
       <BrowseInformation>true</BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <debugInformationFormat>EditAndContinue</debugInformationFormat>
       <CompileAs>Default</CompileAs>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_debug;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0412</Culture>
     </ResourceCompile>
     <Link>
       <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>unicows.lib;odbc32.lib;odbccp32.lib;TriggerVFS.lib;TriggerInfo.lib;Version.lib;urlmon.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d9.lib;unicows.lib;odbc32.lib;odbccp32.lib;TriggerVFS.lib;TriggerInfo.lib;Version.lib;urlmon.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IROSE_ROOT)\3rdParty\lib;$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);$(IROSE_ROOT)\3rdParty\dx90csdk\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IROSE_ROOT)\3rdParty\lib;$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);$(IROSE_ROOT)\3rdParty\dx90csdk\Lib;$(SolutionDir)bin\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GeneratedebugInformation>true</GeneratedebugInformation>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>false</GenerateMapFile>
       <SubSystem>Windows</SubSystem>
@@ -110,9 +111,9 @@
       </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
     <Midl>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>Ndebug;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
@@ -120,8 +121,8 @@
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>.\;.\interface;$(IROSE_ROOT)\engine\include;$(IROSE_ROOT)\3rdParty\include;$(IROSE_ROOT)\TGameCtrl;$(IROSE_ROOT)\tools\TriggerVFS\include;$(IROSE_ROOT)\tools\TriggerInfo\src;$(IROSE_ROOT)\3rdParty\include\lua401;$(IROSE_ROOT)\Common;$(IROSE_ROOT)\3rdParty\dx90csdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_NEW_UI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\interface;$(IROSE_ROOT)\engine\include;$(IROSE_ROOT)\3rdParty\include;$(IROSE_ROOT)\TGameCtrl;$(IROSE_ROOT)\tools\TriggerVFS\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\3rdParty\include\lua401;$(IROSE_ROOT)\Common;$(IROSE_ROOT)\3rdParty\dx90csdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;TRIGGERINFO_STATIC;Ndebug;_WINDOWS;_NEW_UI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
@@ -131,20 +132,20 @@
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <debugInformationFormat>ProgramDatabase</debugInformationFormat>
       <CompileAs>Default</CompileAs>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>Ndebug;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0412</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>odbc32.lib;odbccp32.lib;urlmon.lib;TriggerVFS.lib;TriggerInfo.lib;TGameCtrl_r.lib;Version.lib;urlmon.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)TRose.exe</OutputFile>
+      <AdditionalDependencies>d3d9.lib;odbc32.lib;odbccp32.lib;urlmon.lib;triggerinfo.lib;TriggerVFS.lib;TGameCtrl_r.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IROSE_ROOT)\3rdParty\lib;$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);$(IROSE_ROOT)\3rdParty\dx90csdk\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IROSE_ROOT)\3rdParty\lib;$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);$(IROSE_ROOT)\3rdParty\dx90csdk\Lib;$(SolutionDir)bin\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GeneratedebugInformation>true</GeneratedebugInformation>
       <ProgramDatabaseFile>$(OutDir)TRose000.xxx</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>$(OutDir)TRose000.map</MapFileName>
@@ -194,7 +195,7 @@
     <ClCompile Include="Util\CRangeTBL.cpp" />
     <ClCompile Include="Util\CWaveFILE.cpp" />
     <ClCompile Include="Util\FileVersionInfo.cpp" />
-    <ClCompile Include="Util\JDebugNew.cpp" />
+    <ClCompile Include="Util\JdebugNew.cpp" />
     <ClCompile Include="Util\JResourceContainer.cpp" />
     <ClCompile Include="Util\Localizing.cpp" />
     <ClCompile Include="Util\ResourceCache.cpp" />
@@ -255,10 +256,10 @@
     <ClCompile Include="Terrain\WideTerrain.cpp" />
     <ClCompile Include="CApplication.cpp" />
     <ClCompile Include="Country.cpp" />
-    <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="debug.cpp" />
     <ClCompile Include="StdAfx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="winMAIN.cpp" />
     <ClCompile Include="gamecommon\CDelegatedObservable.cpp" />
@@ -506,8 +507,8 @@
     <ClCompile Include="Common\IO_PAT.cpp" />
     <ClCompile Include="Common\IO_Quest.cpp" />
     <ClCompile Include="Common\IO_Skill.cpp">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
     </ClCompile>
     <ClCompile Include="Common\IO_STB.cpp" />
     <ClCompile Include="Ai_lib\AI_Action.cpp" />
@@ -578,7 +579,7 @@
     <ClInclude Include="Util\DLLIST.h" />
     <ClInclude Include="Util\FileVersionInfo.h" />
     <ClInclude Include="Util\ijl.h" />
-    <ClInclude Include="Util\JDebugNew.h" />
+    <ClInclude Include="Util\JdebugNew.h" />
     <ClInclude Include="Util\JResourceContainer.h" />
     <ClInclude Include="Util\JSingleton.h" />
     <ClInclude Include="Util\Localizing.h" />
@@ -645,7 +646,7 @@
     <ClInclude Include="Terrain\WideTerrain.h" />
     <ClInclude Include="CApplication.h" />
     <ClInclude Include="Country.h" />
-    <ClInclude Include="Debug.h" />
+    <ClInclude Include="debug.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="gamecommon\CDelegatedObservable.h" />
@@ -913,33 +914,33 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="System\export_System.lua">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Export Game Function Interface %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\lua %(FullPath)
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">Export Game Function Interface %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">.\lua %(FullPath)
 </Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)System_FUNC_DEF.inc;System_FUNC_REG.inc;%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Export Game Function Interface %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\lua %(FullPath)
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">%(RootDir)%(Directory)System_FUNC_DEF.inc;System_FUNC_REG.inc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|Win32'">Export Game Function Interface %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|Win32'">.\lua %(FullPath)
 </Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(IROSE_ROOT)\Client\System\System_FUNC_DEF.inc;%(IROSE_ROOT)\Client\System\System_FUNC_REG.inc;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|Win32'">%(IROSE_ROOT)\Client\System\System_FUNC_DEF.inc;%(IROSE_ROOT)\Client\System\System_FUNC_REG.inc;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="export_GM.lua">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Export Game Function Interface %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\lua %(FullPath)
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">Export Game Function Interface %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">.\lua %(FullPath)
 </Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Game_FUNC.h;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)Game_FUNC.h2;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lua %(Filename)%(Extension)
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">.\Game_FUNC.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">%(RootDir)%(Directory)Game_FUNC.h2;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|Win32'">lua %(Filename)%(Extension)
 </Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename);%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|Win32'">%(RootDir)%(Directory)%(Filename);%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="export_QF.lua">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Export Quest Function Interface %(FullPath)</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\lua %(FullPath)
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">Export Quest Function Interface %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">.\lua %(FullPath)
 </Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)Event\Quest_FUNC.h2;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lua %(Filename)%(Extension)
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">%(RootDir)%(Directory)Event\Quest_FUNC.h2;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|Win32'">lua %(Filename)%(Extension)
 </Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename);%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|Win32'">%(RootDir)%(Directory)%(Filename);%(Outputs)</Outputs>
     </CustomBuild>
     <None Include="GlobalScr.lua" />
     <None Include="Res\Attack.cur" />
@@ -968,10 +969,6 @@
   <ItemGroup>
     <ProjectReference Include="..\TGameCtrl\TGameCtrl.vcxproj">
       <Project>{25fc645b-a461-4fdd-848a-4f7c5522313a}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\Tools\TriggerInfo\TriggerInfo.vcxproj">
-      <Project>{de7958cd-934e-4af9-8a22-cce329b364fb}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\Tools\TriggerVFS\TriggerVFS.vcxproj">

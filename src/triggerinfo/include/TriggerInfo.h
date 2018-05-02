@@ -1,11 +1,14 @@
 #ifndef __TRIGGERINFO_H__
 #define __TRIGGERINFO_H__
 
-#ifdef TRIGGERINFO_EXPORTS
+#ifdef TRIGGERINFO_DLL
 #define TRIGGERINFO_API __declspec(dllexport)
+#elif TRIGGERINFO_STATIC
+#define TRIGGERINFO_API
 #else
 #define TRIGGERINFO_API __declspec(dllimport)
 #endif
+
 
 #include <string>
 

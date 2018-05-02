@@ -214,7 +214,7 @@ HRESULT GetDirectXVersionViaDxDiag( DWORD* pdwDirectXVersionMajor,
                     hr = pDxDiagSystemInfo->GetProp( L"szDirectXVersionLetter", &var );
                     if( SUCCEEDED(hr) && var.vt == VT_BSTR && var.bstrVal != NULL )
                     {
-#ifdef UNICODE
+#ifdef _UNICODE
                         *pcDirectXVersionLetter = var.bstrVal[0]; 
 #else
                         char strDestination[10];
