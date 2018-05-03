@@ -116,6 +116,7 @@ bool COptionDlg::Create( const char* szIDD )
 				pListBox->AppendText( "1" , g_dwWHITE );
 		}
 
+		/*
 		pCtrl = pContainer->Find( IID_LIST_ANTIALSING );
 		assert( pCtrl );
 		if( pCtrl && pCtrl->GetControlType() == CTRL_COMBOBOX )
@@ -125,7 +126,7 @@ bool COptionDlg::Create( const char* szIDD )
 		}
 
 
-	/*	pCtrl = pContainer->Find( IID_LIST_GAMMA );
+		pCtrl = pContainer->Find( IID_LIST_GAMMA );
 		assert( pCtrl );
 		if( pCtrl && pCtrl->GetControlType() == CTRL_LISTBOX )
 		{
@@ -563,6 +564,7 @@ void COptionDlg::ChangeVideoOption()
 			}
 		}
 
+		/*
 		pCtrl = pContainer->Find( IID_LIST_ANTIALSING );
 		assert( pCtrl );
 		if( pCtrl && pCtrl->GetControlType() == CTRL_COMBOBOX )
@@ -577,6 +579,7 @@ void COptionDlg::ChangeVideoOption()
 				resetScreen();
 			}
 		}
+		*/
 	}
 }
 void COptionDlg::ChangeAudioOption()
@@ -883,6 +886,7 @@ void COptionDlg::GetCurrentOption()
 			pComboBox->SetSelectedItem( iSelectIndex );
 		}
 
+		/*
 		pCtrl = pContainer->Find( IID_LIST_ANTIALSING );
 		if( pCtrl && pCtrl->GetControlType() == CTRL_COMBOBOX )
 		{
@@ -902,7 +906,7 @@ void COptionDlg::GetCurrentOption()
 			}
 			pComboBox->SetSelectedItem( iSelectIndex );
 		}
-
+		*/
 
 		/// 그리고 해당 해상도에 맞는 주파수를 넣어주고 저장된 주파수를 선택한다.
 		pCtrl = pContainer->Find( IID_SCROLLBAR_CAMERA );

@@ -401,11 +401,7 @@ int CGame::Init()
 	CreateDirectory( CClanMarkUserDefined::ClanMarkFileDirectory.c_str(), NULL );
 	CreateDirectory( "Chat", NULL );
 
-#ifdef _DEBUG
-	m_ClientFileVersion.GetVersionInfo( "d_TRose.exe" );
-#else
 	m_ClientFileVersion.GetVersionInfo( "TRose.exe" );
-#endif
 
 	m_ClientFileVersion.m_strFileVersion = CStr::Printf("%d.%d.%d.%d",
 		m_ClientFileVersion.m_iMajorVersion, 

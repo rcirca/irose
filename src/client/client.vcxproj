@@ -54,8 +54,8 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='release|Win32'">tsukionline</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">tsukionline</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release|Win32'">trose</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">trose</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
     <PostBuildEventUseInBuild />
@@ -148,7 +148,7 @@
       <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\lib;$(SolutionDir)3rdParty\dx90csdk\Lib;$(SolutionDir)bin\$(Configuration);$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GeneratedebugInformation>true</GeneratedebugInformation>
-      <ProgramDatabaseFile>$(OutDir)TRose000.xxx</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>
       </GenerateMapFile>
       <MapFileName>
