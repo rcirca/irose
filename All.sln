@@ -2,29 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIB_Server", "LIB_Server\LIB_Server.vcxproj", "{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHO_GS_DLL", "Server\SHO_GS\SHO_GS_DLL\SHO_GS_DLL.vcxproj", "{48E6A734-BEC4-4317-9102-67A9A3C030E9}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF} = {B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHO_GS_LIB", "Server\SHO_GS\SHO_GS_LIB\SHO_GS_LIB.vcxproj", "{782AF9C9-40B2-4844-BE58-D73710823F16}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHO_LS_DLL", "Server\SHO_LS\SHO_LS_DLL\SHO_LS_DLL.vcxproj", "{880C1CCD-606A-49B9-8891-2794EAB4167C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF} = {B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHO_LS_LIB", "Server\SHO_LS\SHO_LS_LIB\SHO_LS_LIB.vcxproj", "{ABFAB753-FF1C-47E7-AA06-60FFCEC3C8FF}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHO_WS_DLL", "Server\SHO_WS\SHO_WS_DLL\SHO_WS_DLL.vcxproj", "{59368FFB-7EDD-46E7-BD58-19EC6415BB1D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF} = {B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHO_WS_LIB", "Server\SHO_WS\SHO_WS_LIB\SHO_WS_LIB.vcxproj", "{A4BD70F5-CE47-4747-8723-72C37983D063}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "triggerinfo", "src\triggerinfo\triggerinfo.vcxproj", "{DE7958CD-934E-4AF9-8A22-CCE329B364FB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tgamectrl", "src\tgamectrl\tgamectrl.vcxproj", "{25FC645B-A461-4FDD-848A-4F7C5522313A}"
@@ -48,40 +25,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client", "src\client\client
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_util", "src\lib_util\lib_util.vcxproj", "{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_server", "src\lib_server\lib_server.vcxproj", "{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		debug|x86 = debug|x86
 		release|x86 = release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}.debug|x86.ActiveCfg = Debug|Win32
-		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}.debug|x86.Build.0 = Debug|Win32
-		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}.release|x86.ActiveCfg = Release|Win32
-		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}.release|x86.Build.0 = Release|Win32
-		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.debug|x86.ActiveCfg = Debug|Win32
-		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.debug|x86.Build.0 = Debug|Win32
-		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.release|x86.ActiveCfg = Release|Win32
-		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.release|x86.Build.0 = Release|Win32
-		{782AF9C9-40B2-4844-BE58-D73710823F16}.debug|x86.ActiveCfg = Debug|Win32
-		{782AF9C9-40B2-4844-BE58-D73710823F16}.debug|x86.Build.0 = Debug|Win32
-		{782AF9C9-40B2-4844-BE58-D73710823F16}.release|x86.ActiveCfg = Release|Win32
-		{782AF9C9-40B2-4844-BE58-D73710823F16}.release|x86.Build.0 = Release|Win32
-		{880C1CCD-606A-49B9-8891-2794EAB4167C}.debug|x86.ActiveCfg = Debug|Win32
-		{880C1CCD-606A-49B9-8891-2794EAB4167C}.debug|x86.Build.0 = Debug|Win32
-		{880C1CCD-606A-49B9-8891-2794EAB4167C}.release|x86.ActiveCfg = Release|Win32
-		{880C1CCD-606A-49B9-8891-2794EAB4167C}.release|x86.Build.0 = Release|Win32
-		{ABFAB753-FF1C-47E7-AA06-60FFCEC3C8FF}.debug|x86.ActiveCfg = Debug|Win32
-		{ABFAB753-FF1C-47E7-AA06-60FFCEC3C8FF}.debug|x86.Build.0 = Debug|Win32
-		{ABFAB753-FF1C-47E7-AA06-60FFCEC3C8FF}.release|x86.ActiveCfg = Release|Win32
-		{ABFAB753-FF1C-47E7-AA06-60FFCEC3C8FF}.release|x86.Build.0 = Release|Win32
-		{59368FFB-7EDD-46E7-BD58-19EC6415BB1D}.debug|x86.ActiveCfg = Debug|Win32
-		{59368FFB-7EDD-46E7-BD58-19EC6415BB1D}.debug|x86.Build.0 = Debug|Win32
-		{59368FFB-7EDD-46E7-BD58-19EC6415BB1D}.release|x86.ActiveCfg = Release|Win32
-		{59368FFB-7EDD-46E7-BD58-19EC6415BB1D}.release|x86.Build.0 = Release|Win32
-		{A4BD70F5-CE47-4747-8723-72C37983D063}.debug|x86.ActiveCfg = Debug|Win32
-		{A4BD70F5-CE47-4747-8723-72C37983D063}.debug|x86.Build.0 = Debug|Win32
-		{A4BD70F5-CE47-4747-8723-72C37983D063}.release|x86.ActiveCfg = Release|Win32
-		{A4BD70F5-CE47-4747-8723-72C37983D063}.release|x86.Build.0 = Release|Win32
 		{DE7958CD-934E-4AF9-8A22-CCE329B364FB}.debug|x86.ActiveCfg = Debug|Win32
 		{DE7958CD-934E-4AF9-8A22-CCE329B364FB}.debug|x86.Build.0 = Debug|Win32
 		{DE7958CD-934E-4AF9-8A22-CCE329B364FB}.release|x86.ActiveCfg = release|Win32
@@ -106,6 +57,10 @@ Global
 		{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}.debug|x86.Build.0 = Debug|Win32
 		{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}.release|x86.ActiveCfg = Release|Win32
 		{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}.release|x86.Build.0 = Release|Win32
+		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}.debug|x86.ActiveCfg = debug|Win32
+		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}.debug|x86.Build.0 = debug|Win32
+		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}.release|x86.ActiveCfg = release|Win32
+		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}.release|x86.Build.0 = release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
