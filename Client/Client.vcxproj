@@ -71,7 +71,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <OmitFramePointers>false</OmitFramePointers>
-      <AdditionalIncludeDirectories>.\;.\interface;$(IROSE_ROOT)\engine\include;$(IROSE_ROOT)\3rdParty\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\3rdParty\include\lua401;$(IROSE_ROOT)\Common;$(IROSE_ROOT)\3rdParty\dx90csdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;TGAMECTRL_STATIC;TRIGGERINFO_STATIC;_debug;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadeddebug</RuntimeLibrary>
@@ -121,7 +121,7 @@
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>.\;.\interface;$(IROSE_ROOT)\engine\include;$(IROSE_ROOT)\3rdParty\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\3rdParty\include\lua401;$(IROSE_ROOT)\Common;$(IROSE_ROOT)\3rdParty\dx90csdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;TGAMECTRL_STATIC;TRIGGERINFO_STATIC;Ndebug;_WINDOWS;_NEW_UI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>

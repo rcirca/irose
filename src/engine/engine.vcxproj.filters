@@ -400,16 +400,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="dialog.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuildStep Include="version_info.rc">
-      <Filter>Resource Files</Filter>
-    </CustomBuildStep>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="src\zz_algebra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -722,5 +712,10 @@
     <ClCompile Include="src\zz_waiting_line.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dialog.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

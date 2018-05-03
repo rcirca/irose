@@ -21,7 +21,7 @@
 #include "../IO_ImageRes.h"
 #include "../../IO_Terrain.h"
 #include "../../System/CGame.h"
-#include "../../../engine/include/zz_interface.h"
+#include "zz_interface.h"
 #include "../../GameData/CParty.h"
 
 #include "tgamectrl/tpane.h"

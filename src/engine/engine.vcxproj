@@ -39,12 +39,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IROSE_ROOT)\bin\$(Platform)\$(Configuration)\Client\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IROSE_ROOT)\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)build\$(Configuration)\$(ProjectName)\</IntDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">*.obj%3b*.ilk%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.pgc%3b*.pgd%3b</ExtensionsToDeleteOnClean>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IROSE_ROOT)\bin\$(Platform)\$(Configuration)\Client\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IROSE_ROOT)\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)build\$(Configuration)\$(ProjectName)\</IntDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">*.obj%3b*.ilk%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.pgc%3b*.pgd%3b</ExtensionsToDeleteOnClean>
     <PreBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PreBuildEventUseInBuild>
     <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -70,13 +70,11 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
       <Message>Increasing Build Count</Message>
-      <Command>cd $(IROSE_ROOT)\engine\include
-$(IROSE_ROOT)\3rdParty\bin\lua5.exe -e debug=1 zz_build_count.lua
-$(IROSE_ROOT)\3rdParty\bin\lua5.exe -e debug=1 zz_script_lua.lua</Command>
+      <Command>cd $(ProjectDir)include</Command>
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\;$(IROSE_ROOT)\engine\include;$(IROSE_ROOT)\3rdParty\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(IROSE_ROOT)\3rdParty\include\lua500;$(IROSE_ROOT)\LIB_Util;$(IROSE_ROOT)\3rdParty\dx90csdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir);$(SolutionDir)3rdParty\include;$(SolutionDir)3rdParty\include\lua500;$(SolutionDir)3rdParty\dx90csdk\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(IROSE_ROOT)\LIB_Util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ZZ_DLL_EXPORT;XXXZZ_MEM_ON;D3D_DEBUG_INFO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -88,8 +86,8 @@ $(IROSE_ROOT)\3rdParty\bin\lua5.exe -e debug=1 zz_script_lua.lua</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>lua500.lib;triggervfs.lib;Util_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
-      <AdditionalLibraryDirectories>$(IROSE_ROOT)\lib;$(IROSE_ROOT)\lib\$(Platform);$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);$(IROSE_ROOT)\3rdParty\lib;$(IROSE_ROOT)\3rdParty\dx90csdk\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\lib;$(SolutionDir)3rdParty\dx90csdk\lib;$(IROSE_ROOT)\lib;$(IROSE_ROOT)\lib\$(Platform);$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcp.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
@@ -108,9 +106,7 @@ $(IROSE_ROOT)\3rdParty\bin\lua5.exe -e debug=1 zz_script_lua.lua</Command>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
       <Message>Increasing Build Count</Message>
-      <Command>cd $(IROSE_ROOT)\engine\include
-$(IROSE_ROOT)\3rdParty\bin\lua5.exe -e debug=1 zz_build_count.lua
-$(IROSE_ROOT)\3rdParty\bin\lua5.exe -e debug=1 zz_script_lua.lua</Command>
+      <Command>cd $(ProjectDir)include</Command>
     </PreBuildEvent>
     <CustomBuildStep>
       <Command>
@@ -124,7 +120,7 @@ $(IROSE_ROOT)\3rdParty\bin\lua5.exe -e debug=1 zz_script_lua.lua</Command>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <OmitFramePointers>false</OmitFramePointers>
       <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <AdditionalIncludeDirectories>.\;$(IROSE_ROOT)\engine\include;$(IROSE_ROOT)\3rdParty\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(IROSE_ROOT)\3rdParty\include\lua500;$(IROSE_ROOT)\LIB_Util;$(IROSE_ROOT)\3rdParty\dx90csdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir);$(SolutionDir)3rdParty\include;$(SolutionDir)3rdParty\include\lua500;$(SolutionDir)3rdParty\dx90csdk\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(IROSE_ROOT)\LIB_Util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ZZ_DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>
@@ -141,7 +137,7 @@ $(IROSE_ROOT)\3rdParty\bin\lua5.exe -e debug=1 zz_script_lua.lua</Command>
     <Link>
       <AdditionalDependencies>lua500.lib;triggervfs.lib;Util_r.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName).dll</OutputFile>
-      <AdditionalLibraryDirectories>$(IROSE_ROOT)\lib;$(IROSE_ROOT)\lib\$(Platform);$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);$(IROSE_ROOT)\3rdParty\lib;$(IROSE_ROOT)\3rdParty\dx90csdk\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\lib;$(SolutionDir)3rdParty\dx90csdk\lib;$(IROSE_ROOT)\lib;$(IROSE_ROOT)\lib\$(Platform);$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
@@ -298,10 +294,6 @@ $(IROSE_ROOT)\3rdParty\bin\lua5.exe -e debug=1 zz_script_lua.lua</Command>
     <None Include="include\zz_version_info.inc" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="dialog.rc" />
-    <CustomBuildStep Include="version_info.rc" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="src\zz_algebra.cpp" />
     <ClCompile Include="src\zz_animatable.cpp" />
     <ClCompile Include="src\zz_assert.cpp" />
@@ -406,6 +398,9 @@ $(IROSE_ROOT)\3rdParty\bin\lua5.exe -e debug=1 zz_script_lua.lua</Command>
     <ClCompile Include="src\zz_view_d3d.cpp" />
     <ClCompile Include="src\zz_visible.cpp" />
     <ClCompile Include="src\zz_waiting_line.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dialog.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
