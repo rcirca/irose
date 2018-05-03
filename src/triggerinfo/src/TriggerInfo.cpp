@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "TriggerInfo.h"
+#include "triggerinfo.h"
 #include "SysInfo.h"
 #include "Http.h"
 #include "__d3d9.h"

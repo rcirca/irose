@@ -58,7 +58,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)3rdparty\dx90csdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdparty\dx90csdk\include;$(ProjectDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WIN32;_WINDOWS;TRIGGERINFO_STATIC;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -92,7 +92,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)3rdparty\dx90csdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdparty\dx90csdk\include;$(ProjectDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WIN32;_WINDOWS;TRIGGERINFO_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>Create</PrecompiledHeader>
@@ -123,18 +123,18 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\AdapterInfo.h" />
-    <ClInclude Include="include\CpuInfo.h" />
-    <ClInclude Include="include\disk.h" />
-    <ClInclude Include="include\dispinfo.h" />
-    <ClInclude Include="include\getdxver.h" />
-    <ClInclude Include="include\Http.h" />
-    <ClInclude Include="include\OSInfo.h" />
-    <ClInclude Include="include\reg.h" />
-    <ClInclude Include="include\SysInfo.h" />
-    <ClInclude Include="include\SystemInfo.h" />
-    <ClInclude Include="include\TriggerInfo.h" />
-    <ClInclude Include="include\__d3d9.h" />
+    <ClInclude Include="include\triggerinfo\adapterinfo.h" />
+    <ClInclude Include="include\triggerinfo\cpuinfo.h" />
+    <ClInclude Include="include\triggerinfo\disk.h" />
+    <ClInclude Include="include\triggerinfo\dispinfo.h" />
+    <ClInclude Include="include\triggerinfo\getdxver.h" />
+    <ClInclude Include="include\triggerinfo\http.h" />
+    <ClInclude Include="include\triggerinfo\osinfo.h" />
+    <ClInclude Include="include\triggerinfo\reg.h" />
+    <ClInclude Include="include\triggerinfo\sysinfo.h" />
+    <ClInclude Include="include\triggerinfo\systeminfo.h" />
+    <ClInclude Include="include\triggerinfo\triggerinfo.h" />
+    <ClInclude Include="include\triggerinfo\__d3d9.h" />
     <ClInclude Include="src\stdafx.h" />
   </ItemGroup>
   <ItemGroup>

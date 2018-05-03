@@ -10,7 +10,7 @@
 #include "Util/classHTTP.h"
 #include "Object.h"
 #include "IO_Terrain.h"
-#include "TriggerInfo.h"
+#include "triggerinfo/triggerinfo.h"
 #include "System/CGame.h"
 #include "Interface/it_MGR.h"
 

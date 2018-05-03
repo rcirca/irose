@@ -69,7 +69,7 @@ $Header: /Client/Network/RecvPACKET.cpp 690   05-10-27 10:18a Choo0219 $
 //#include "../nProtect/NProtect.h"
 #include "../GameProc/UseItemDelay.h"
 
-#include "TriggerInfo.h"
+#include "triggerinfo/triggerinfo.h"
 
 // 서버에서 받은 전역 번수들 설정...
 void SetServerVAR( tagVAR_GLOBAL *pVAR )

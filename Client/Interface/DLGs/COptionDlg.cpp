@@ -23,7 +23,7 @@
 #include "tgamectrl/teditbox.h"
 
 #include "../../IO_Terrain.h"
-#include "TriggerInfo.h"
+#include "triggerinfo/triggerinfo.h"
 
 COptionDlg::COptionDlg(void)
 {

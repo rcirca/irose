@@ -1,7 +1,7 @@
 #ifndef __ADAPTERINFO_H__
 #define __ADAPTERINFO_H__
 
-#include "TriggerInfo.h"
+#include "triggerinfo.h"
 #include "__d3d9.h"
 
 struct sAdapterInfo
