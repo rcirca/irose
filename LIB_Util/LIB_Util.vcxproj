@@ -59,7 +59,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\Client\Util;..\znzin11\3rdparty\lua-4.0.1\include;$(IROSE_ROOT)\Common;$(IROSE_ROOT)\Server\SHO_GS\SHO_GS_LIB\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\common;..\Client\Util;..\znzin11\3rdparty\lua-4.0.1\include;$(IROSE_ROOT)\Common;$(IROSE_ROOT)\Server\SHO_GS\SHO_GS_LIB\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -90,7 +90,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\Client\Util;..\znzin11\3rdparty\lua-4.0.1\include;..\Server\SHO_GS\SHO_GS_LIB\srv_COMMON;..\Server\SHO_GS\SHO_GS_LIB\Common;..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\common;..\Client\Util;..\znzin11\3rdparty\lua-4.0.1\include;..\Server\SHO_GS\SHO_GS_LIB\srv_COMMON;..\Server\SHO_GS\SHO_GS_LIB\Common;..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>

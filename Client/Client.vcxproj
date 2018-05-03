@@ -71,7 +71,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <OmitFramePointers>false</OmitFramePointers>
-      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(SolutionDir)src\triggervfs\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(SolutionDir)src\triggervfs\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(SolutionDir)src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;TGAMECTRL_STATIC;TRIGGERINFO_STATIC;_debug;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadeddebug</RuntimeLibrary>
@@ -121,7 +121,7 @@
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(SolutionDir)src\triggervfs\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(SolutionDir)src\triggervfs\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(SolutionDir)src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;TGAMECTRL_STATIC;TRIGGERINFO_STATIC;Ndebug;_WINDOWS;_NEW_UI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -169,13 +169,14 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\common\CAssertNew.cpp" />
+    <ClCompile Include="..\src\common\MiniDumper.cpp" />
     <ClCompile Include="CCamera.cpp" />
     <ClCompile Include="CClientStorage.cpp" />
     <ClCompile Include="CommandFilter.cpp" />
     <ClCompile Include="CViewMSG.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="JCommandState.cpp" />
-    <ClCompile Include="..\Common\MiniDumper.cpp" />
     <ClCompile Include="SqliteDB.cpp" />
     <ClCompile Include="Util\ADSStream.cpp" />
     <ClCompile Include="Util\CCheat.cpp" />
@@ -493,7 +494,6 @@
     <ClCompile Include="Event\QuestRewardQueue.cpp" />
     <ClCompile Include="BULLET.CPP" />
     <ClCompile Include="Common\Calculation.cpp" />
-    <ClCompile Include="..\Common\CAssertNew.cpp" />
     <ClCompile Include="Common\CEconomy.cpp" />
     <ClCompile Include="Common\CHotICON.cpp" />
     <ClCompile Include="Common\CInventory.cpp" />
@@ -532,13 +532,14 @@
     <ClCompile Include="Tutorial\TutorialEventUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\common\CAssertNew.h" />
+    <ClInclude Include="..\src\common\MiniDumper.h" />
     <ClInclude Include="CCamera.h" />
     <ClInclude Include="CClientStorage.h" />
     <ClInclude Include="CommandFilter.h" />
     <ClInclude Include="CViewMSG.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="JCommandState.h" />
-    <ClInclude Include="..\Common\MiniDumper.h" />
     <ClInclude Include="SqliteDB.h" />
     <ClInclude Include="Util\ADSStream.h" />
     <ClInclude Include="Util\BugGUARD.h" />
@@ -876,7 +877,6 @@
     <ClInclude Include="Event\QuestRewardQueue.h" />
     <ClInclude Include="BULLET.H" />
     <ClInclude Include="Common\Calculation.h" />
-    <ClInclude Include="..\Common\CAssertNew.h" />
     <ClInclude Include="Common\CEconomy.h" />
     <ClInclude Include="Common\CHotICON.h" />
     <ClInclude Include="Common\CInventory.h" />

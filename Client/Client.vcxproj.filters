@@ -114,6 +114,9 @@
     <Filter Include="Include">
       <UniqueIdentifier>{f53659f2-4760-490a-9b3a-2facac96fd1e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Common\Common">
+      <UniqueIdentifier>{58790777-73cc-495f-9143-745a07d4c2bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CCamera.cpp">
@@ -132,9 +135,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="JCommandState.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\MiniDumper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SqliteDB.cpp">
@@ -1079,9 +1079,6 @@
     <ClCompile Include="Common\Calculation.cpp">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\CAssertNew.cpp">
-      <Filter>Source Files\Common</Filter>
-    </ClCompile>
     <ClCompile Include="Common\CEconomy.cpp">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
@@ -1181,6 +1178,12 @@
     <ClCompile Include="Tutorial\TutorialEventUtility.cpp">
       <Filter>Source Files\Tutorial</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\common\MiniDumper.cpp">
+      <Filter>Source Files\Common\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\CAssertNew.cpp">
+      <Filter>Source Files\Common\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CCamera.h">
@@ -1199,9 +1202,6 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="JCommandState.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Common\MiniDumper.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="SqliteDB.h">
@@ -2215,9 +2215,6 @@
     <ClInclude Include="Common\Calculation.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\CAssertNew.h">
-      <Filter>Source Files\Common</Filter>
-    </ClInclude>
     <ClInclude Include="Common\CEconomy.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
@@ -2319,6 +2316,12 @@
     </ClInclude>
     <ClInclude Include="..\Engine\include\zz_interface.h">
       <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\MiniDumper.h">
+      <Filter>Source Files\Common\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\CAssertNew.h">
+      <Filter>Source Files\Common\Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
