@@ -2,7 +2,7 @@
 #include ".\jcombobox.h"
 #include "TButton.h"
 #include "TImage.h"
-#include "tgamectrl/jlistbox.h"
+#include "jlistbox.h"
 #include "ITFont.h"
 #include "TControlMgr.h"
 #include <assert.h>

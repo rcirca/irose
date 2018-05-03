@@ -39,13 +39,6 @@
 
 #pragma comment (lib, "xmlparse.lib")
 
-#ifdef _DEBUG
-	#pragma comment (lib, "TGameCtrl_d.lib" )
-#else
-	#pragma comment (lib, "TGameCtrl_r.lib" )
-#endif
- 
-
 #ifdef	_USE_BG
 #pragma comment (lib, "util\\BugGUARD.lib" )
 #endif

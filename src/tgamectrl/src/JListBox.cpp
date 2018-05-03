@@ -3,7 +3,7 @@
 /// ---------------------------------------------------------------------------
 #include "StdAfx.h"
 #include ".\jlistbox.h"
-#include "tgamectrl/tcontainer.h"
+#include "tcontainer.h"
 #include "IListCellRenderer.h"
 #include "TControlMgr.h"
 #include "ITFont.h"
