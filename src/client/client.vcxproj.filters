@@ -1178,10 +1178,10 @@
     <ClCompile Include="Tutorial\TutorialEventUtility.cpp">
       <Filter>Source Files\Tutorial</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\common\MiniDumper.cpp">
+    <ClCompile Include="..\common\CAssertNew.cpp">
       <Filter>Source Files\Common\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\common\CAssertNew.cpp">
+    <ClCompile Include="..\common\MiniDumper.cpp">
       <Filter>Source Files\Common\Common</Filter>
     </ClCompile>
   </ItemGroup>
@@ -2317,10 +2317,10 @@
     <ClInclude Include="..\Engine\include\zz_interface.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\common\MiniDumper.h">
+    <ClInclude Include="..\common\CAssertNew.h">
       <Filter>Source Files\Common\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\common\CAssertNew.h">
+    <ClInclude Include="..\common\MiniDumper.h">
       <Filter>Source Files\Common\Common</Filter>
     </ClInclude>
   </ItemGroup>

@@ -71,7 +71,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <OmitFramePointers>false</OmitFramePointers>
-      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(SolutionDir)src\triggervfs\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(SolutionDir)src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(SolutionDir)src\triggervfs\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(SolutionDir)src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;TGAMECTRL_STATIC;TRIGGERINFO_STATIC;_debug;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadeddebug</RuntimeLibrary>
@@ -96,10 +96,10 @@
     </ResourceCompile>
     <Link>
       <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>d3d9.lib;odbc32.lib;odbccp32.lib;urlmon.lib;unicows.lib;Version.lib;tgamectrl.lib;triggerinfo.lib;TriggerVFS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d9.lib;odbc32.lib;odbccp32.lib;urlmon.lib;unicows.lib;Version.lib;lib_util.lib;tgamectrl.lib;triggerinfo.lib;triggervfs.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IROSE_ROOT)\3rdParty\lib;$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);$(IROSE_ROOT)\3rdParty\dx90csdk\Lib;$(SolutionDir)bin\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\lib;$(SolutionDir)3rdParty\dx90csdk\Lib;$(SolutionDir)bin\$(Configuration);$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GeneratedebugInformation>true</GeneratedebugInformation>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
@@ -121,7 +121,7 @@
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(SolutionDir)src\triggervfs\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(SolutionDir)src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(SolutionDir)src\triggervfs\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(SolutionDir)src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;TGAMECTRL_STATIC;TRIGGERINFO_STATIC;Ndebug;_WINDOWS;_NEW_UI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -140,10 +140,10 @@
       <Culture>0x0412</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>d3d9.lib;odbc32.lib;odbccp32.lib;urlmon.lib;unicows.lib;Version.lib;tgamectrl.lib;triggerinfo.lib;TriggerVFS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d9.lib;odbc32.lib;odbccp32.lib;urlmon.lib;unicows.lib;Version.lib;lib_util.lib;tgamectrl.lib;triggerinfo.lib;triggervfs.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IROSE_ROOT)\3rdParty\lib;$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);$(IROSE_ROOT)\3rdParty\dx90csdk\Lib;$(SolutionDir)bin\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\lib;$(SolutionDir)3rdParty\dx90csdk\Lib;$(SolutionDir)bin\$(Configuration);$(IROSE_ROOT)\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GeneratedebugInformation>true</GeneratedebugInformation>
       <ProgramDatabaseFile>$(OutDir)TRose000.xxx</ProgramDatabaseFile>
@@ -169,8 +169,8 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\common\CAssertNew.cpp" />
-    <ClCompile Include="..\src\common\MiniDumper.cpp" />
+    <ClCompile Include="..\common\CAssertNew.cpp" />
+    <ClCompile Include="..\common\MiniDumper.cpp" />
     <ClCompile Include="CCamera.cpp" />
     <ClCompile Include="CClientStorage.cpp" />
     <ClCompile Include="CommandFilter.cpp" />
@@ -532,8 +532,8 @@
     <ClCompile Include="Tutorial\TutorialEventUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\common\CAssertNew.h" />
-    <ClInclude Include="..\src\common\MiniDumper.h" />
+    <ClInclude Include="..\common\CAssertNew.h" />
+    <ClInclude Include="..\common\MiniDumper.h" />
     <ClInclude Include="CCamera.h" />
     <ClInclude Include="CClientStorage.h" />
     <ClInclude Include="CommandFilter.h" />
