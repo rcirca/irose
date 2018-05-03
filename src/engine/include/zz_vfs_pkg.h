@@ -143,7 +143,7 @@
 #endif
 #define zz_vfs_pkg zz_vfs_local
 #else
-#include "TriggerVFS.h"
+#include "triggervfs/triggervfs.h"
 
 #ifndef __ZZ_STRING_H__
 #include "zz_string.h"

@@ -2,7 +2,7 @@
 #include ".\clanmarkmanager.h"
 #include "../Game.h"
 #include "ClanMarkTransfer.h"
-#include "classCRC.h"
+#include "util/classCRC.h"
 
 
 CClanMarkManager _ClanMarkManager;

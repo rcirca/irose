@@ -4,7 +4,7 @@
 #include "JSingleton.h"
 #include <list>
 #include "CFileSystem.h"
-#include "TriggerVFS.h"
+#include "triggervfs/triggervfs.h"
 
 enum
 {

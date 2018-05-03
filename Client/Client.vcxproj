@@ -71,7 +71,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <OmitFramePointers>false</OmitFramePointers>
-      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(SolutionDir)src\triggervfs\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;TGAMECTRL_STATIC;TRIGGERINFO_STATIC;_debug;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadeddebug</RuntimeLibrary>
@@ -121,7 +121,7 @@
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\interface;$(SolutionDir)3rdParty\dx90csdk\Include;$(SolutionDir)3rdParty\include\lua401;$(SolutionDir)3rdParty\include;$(SolutionDir)src\engine\include;$(SolutionDir)src\triggervfs\include;$(SolutionDir)src\tgamectrl\include;$(SolutionDir)src\triggerinfo\include;$(IROSE_ROOT)\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;TGAMECTRL_STATIC;TRIGGERINFO_STATIC;Ndebug;_WINDOWS;_NEW_UI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -965,12 +965,6 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Client.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tools\TriggerVFS\TriggerVFS.vcxproj">
-      <Project>{3d8fb37b-21f3-4def-9b78-6fe270c73494}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

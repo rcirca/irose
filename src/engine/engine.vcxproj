@@ -74,7 +74,7 @@
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir);$(SolutionDir)3rdParty\include;$(SolutionDir)3rdParty\include\lua500;$(SolutionDir)3rdParty\dx90csdk\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(IROSE_ROOT)\LIB_Util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir);$(SolutionDir)3rdParty\include;$(SolutionDir)3rdParty\include\lua500;$(SolutionDir)3rdParty\dx90csdk\include;$(SolutionDir)src\triggervfs\include;$(IROSE_ROOT)\LIB_Util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ZZ_DLL_EXPORT;XXXZZ_MEM_ON;D3D_DEBUG_INFO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -120,7 +120,7 @@
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <OmitFramePointers>false</OmitFramePointers>
       <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir);$(SolutionDir)3rdParty\include;$(SolutionDir)3rdParty\include\lua500;$(SolutionDir)3rdParty\dx90csdk\include;$(IROSE_ROOT)\tools\TriggerVFS\include;$(IROSE_ROOT)\LIB_Util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir);$(SolutionDir)3rdParty\include;$(SolutionDir)3rdParty\include\lua500;$(SolutionDir)3rdParty\dx90csdk\include;$(SolutionDir)src\triggervfs\include;$(IROSE_ROOT)\LIB_Util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ZZ_DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>
