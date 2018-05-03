@@ -103,8 +103,10 @@
       <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GeneratedebugInformation>true</GeneratedebugInformation>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
-      <GenerateMapFile>false</GenerateMapFile>
+      <GenerateMapFile>
+      </GenerateMapFile>
       <SubSystem>Windows</SubSystem>
+      <MapExports />
     </Link>
     <PostBuildEvent>
       <Command>
@@ -147,9 +149,12 @@
       <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GeneratedebugInformation>true</GeneratedebugInformation>
       <ProgramDatabaseFile>$(OutDir)TRose000.xxx</ProgramDatabaseFile>
-      <GenerateMapFile>true</GenerateMapFile>
-      <MapFileName>$(OutDir)TRose000.map</MapFileName>
-      <MapExports>true</MapExports>
+      <GenerateMapFile>
+      </GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>
+      </MapExports>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>
       </OptimizeReferences>

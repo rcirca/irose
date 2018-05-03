@@ -1,6 +1,9 @@
 #ifndef	__IO_STB_H
 #define	__IO_STB_H
+
+#include "Util/classstr.h"
 #include "..\Util\classHASH.h"
+
 #ifndef __SERVER
 	#include "../GameCommon/StringManager.h"
 #endif
@@ -11,7 +14,7 @@ private:
 	bool	m_bString;
 
 	int		m_iValue;
-	CStrVAR*m_pString;
+	CStrVAR* m_pString;
 
 public :
 	STBVALUE ();

@@ -59,7 +59,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)src\common;$(SolutionDir)src\client\util;$(SolutionDir)Server\SHO_GS\SHO_GS_LIB\srv_COMMON;$(SolutionDir)Server\SHO_GS\SHO_GS_LIB\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\common;$(SolutionDir)src\client\util;$(SolutionDir)src\SHO_GS\SHO_GS_LIB\srv_COMMON;$(SolutionDir)src\SHO_GS\SHO_GS_LIB\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -90,7 +90,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>$(SolutionDir)src\common;$(SolutionDir)src\client\util;$(SolutionDir)Server\SHO_GS\SHO_GS_LIB\srv_COMMON;$(SolutionDir)Server\SHO_GS\SHO_GS_LIB\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\common;$(SolutionDir)src\client\util;$(SolutionDir)src\SHO_GS\SHO_GS_LIB\srv_COMMON;$(SolutionDir)src\SHO_GS\SHO_GS_LIB\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
