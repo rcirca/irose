@@ -8,7 +8,7 @@
 #include <deque>
 
 
-#include "TDialog.h"
+#include "tgamectrl/tdialog.h"
 
 struct ServerInfo
 {

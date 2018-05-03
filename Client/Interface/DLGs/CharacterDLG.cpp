@@ -16,10 +16,10 @@
 #include "../../GameData/Event/CTEventItem.h"
 #include "../../GameData/CClan.h"
 
-#include "TabbedPane.h"
-#include "TGuage.h"
-#include "JContainer.h"
-#include "ResourceMgr.h"
+#include "tgamectrl/tabbedpane.h"
+#include "tgamectrl/tguage.h"
+#include "tgamectrl/jcontainer.h"
+#include "tgamectrl/resourcemgr.h"
 
 CCharacterDLG::CCharacterDLG( int iType )
 {

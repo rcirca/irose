@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include ".\clanmemberitem.h"
-#include "ZListBox.h"
+#include "tgamectrl/zlistbox.h"
 #include "../../../Game.h"
 #include "../../../GameCommon/StringManager.h"
 #include "../../../GameData/CClan.h"
@@ -10,7 +10,7 @@
 #include "../../CToolTipMgr.h"
 #include "../CClanDlg.h"
 #include "../../TypeResource.h"
-#include "ResourceMgr.h"
+#include "tgamectrl/resourcemgr.h"
 
 CClanMemberItem::CClanMemberItem( const char* pszName, int iClass ,int iClanPoint, int iChannelNo, short nLevel, short nJob )
 {

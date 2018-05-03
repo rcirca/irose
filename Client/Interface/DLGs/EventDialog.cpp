@@ -8,11 +8,11 @@
 #include "../IO_ImageRes.h"
 #include "../../Country.h"
 
-#include "ResourceMgr.h"
-#include "TCaption.h"
-#include "ZListBox.h"
-#include "TImage.h"
-#include "TButton.h"
+#include "tgamectrl/resourcemgr.h"
+#include "tgamectrl/tcaption.h"
+#include "tgamectrl/zlistbox.h"
+#include "tgamectrl/timage.h"
+#include "tgamectrl/tbutton.h"
 
 const int BG_IMAGE_HEIGHT = 150;
 CEventDialog::CEventDialog(void)

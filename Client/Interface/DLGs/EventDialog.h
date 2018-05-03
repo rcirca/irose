@@ -1,8 +1,8 @@
 #ifndef _CEventDialog_
 #define _CEventDialog_
 
-#include "TDialog.h"
-#include "JStringParser.h"
+#include "tgamectrl/tdialog.h"
+#include "tgamectrl/JStringParser.h"
 
 
 /**

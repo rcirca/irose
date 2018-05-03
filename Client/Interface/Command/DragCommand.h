@@ -1,6 +1,6 @@
 #ifndef _DragCommand_
 #define _DragCommand_
-#include "tcommand.h"
+#include "tgamectrl/tcommand.h"
 
 #include "../InterfaceType.h"
 

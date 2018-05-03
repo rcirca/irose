@@ -31,7 +31,7 @@
 
 
 
-#include "../../../TGameCtrl/ResourceMgr.h"
+#include "tgamectrl/resourcemgr.h"
 #include "../../GameCommon/Skill.h"
 #include "../../GameData/CExchange.h"
 #include "../../GameData/Event/CTEventItem.h"

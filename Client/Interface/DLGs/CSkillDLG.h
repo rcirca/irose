@@ -6,7 +6,7 @@
 #include "../../gamecommon/IObserver.h"
 #include "subclass/cslot.h"
 
-#include "TDialog.h"
+#include "tgamectrl/tdialog.h"
 
 class CZListBox;
 

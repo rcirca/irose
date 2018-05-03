@@ -6,7 +6,7 @@
 #include "../Network\\CNetwork.h"
 #include "../interface/it_mgr.h"
 #include "../system/CGame.h"
-#include "../TGameCtrl/TEditBox.h"
+#include "tgamectrl/teditbox.h"
 #include "../Misc/GameUtil.h"
 
 #define pi 3.14159265

@@ -8,7 +8,7 @@
 #include "IO_ImageRes.h"
 #include "TypeResource.h"
 #include "OBJECT.h"
-#include "ResourceMgr.h"
+#include "tgamectrl/resourcemgr.h"
 #include "../GameCommon/Item.h"
 #include "../Country.h"
 

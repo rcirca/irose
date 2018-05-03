@@ -1,6 +1,6 @@
 #ifndef _CTCmdSystem_
 #define _CTCmdSystem_
-#include "tcommand.h"
+#include "tgamectrl/tcommand.h"
 
 /// 사용안함
 class CTCmdChangeGameState : public CTCommand

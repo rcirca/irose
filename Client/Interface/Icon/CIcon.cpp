@@ -8,7 +8,7 @@
 #include "../../Common/IO_STB.h"
 #include "../../Game.h"
 
-#include "../../../TGameCtrl/TDialog.h"
+#include "tgamectrl/tdialog.h"
 #include "../../System/CGame.h"
 CIcon::CIcon(void)
 {

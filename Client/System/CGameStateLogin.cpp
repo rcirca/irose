@@ -3,7 +3,7 @@
 #include "CGame.h"
 
 #include "../Game.h"
-#include "../TGameCtrl/TMsgBox.h"
+#include "tgamectrl/tmsgbox.h"
 #include "../Network/CNetwork.h"
 
 #include "../Interface/ExternalUI/ExternalUILobby.h"
@@ -21,7 +21,7 @@
 #include "../CSkyDOME.H"
 //#include "../nProtect/nProtect.h"
 #include "../Misc/GameUtil.h"
-#include "TIme2.h"
+#include "tgamectrl/time2.h"
 #include "SystemProcScript.h"
 
 

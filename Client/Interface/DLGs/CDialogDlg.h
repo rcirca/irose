@@ -1,7 +1,7 @@
 #ifndef _CDialogDlg_
 #define _CDialogDlg_
-#include "tdialog.h"
-#include "JStringParser.h"
+#include "tgamectrl/tdialog.h"
+#include "tgamectrl/JStringParser.h"
 
 /**
 * NPC 와의 대화시 사용되는 다이얼로그

@@ -1,6 +1,6 @@
 #ifndef _CMailBoxListItem_
 #define _CMailBoxListItem_
-#include "winctrl.h"
+#include "tgamectrl/winctrl.h"
 
 /**
 * 커뮤니티 창의 우편함 List에 사용되는 item class

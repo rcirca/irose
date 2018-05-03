@@ -2,7 +2,7 @@
 #define _EXTERNALUILOBBY_
 
 #include "CExternalUIManager.h"
-//#include "../../../TGameCtrl/TImage.h"
+//#include "../../tgamectrl/TImage.h"
 
 #include <string>
 

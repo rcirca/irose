@@ -21,6 +21,7 @@ static CAdapterInfo * g_pAdInfo = NULL;
 static string g_Info;
 static string g_InfoForWeb;
 
+#ifdef TRIGGERINFO_DLL
 BOOL APIENTRY DllMain( HANDLE hModule, 
                        DWORD  ul_reason_for_call, 
                        LPVOID lpReserved
@@ -36,7 +37,7 @@ BOOL APIENTRY DllMain( HANDLE hModule,
 	}
     return TRUE;
 }
-
+#endif
 
 /******************************************************************
  * 현재 Dectect되어 있는 정보를 리턴한다

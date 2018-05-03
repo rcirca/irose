@@ -1,6 +1,6 @@
 #ifndef _CTARGETMENU_
 #define _CTARGETMENU_
-#include "../../../TGameCtrl/TDialog.h"
+#include "tgamectrl/tdialog.h"
 
 class CTargetMenu :	public CTDialog
 {

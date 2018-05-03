@@ -2,8 +2,8 @@
 #include "CExternalUIManager.h"
 #include "../../Game.h"
 
-#include "TDialog.h"
-#include "TComboBox.h"
+#include "tgamectrl/tdialog.h"
+#include "tgamectrl/tcombobox.h"
 CExternalUIManager::CExternalUIManager()
 {
 	for( int i = 0; i < EUI_MAX; ++i )

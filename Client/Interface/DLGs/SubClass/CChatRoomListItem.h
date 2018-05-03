@@ -1,6 +1,6 @@
 #ifndef _ChatRoomListItem_
 #define _ChatRoomListItem_
-#include "winctrl.h"
+#include "tgamectrl/winctrl.h"
 
 /**
 * 커뮤니티 창의 대화방 List에 사용되는 item

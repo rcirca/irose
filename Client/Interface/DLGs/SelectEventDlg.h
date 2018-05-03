@@ -1,7 +1,7 @@
 #ifndef _CSelectEventDlg_
 #define _CSelectEventDlg_
 
-#include "TDialog.h"
+#include "tgamectrl/tdialog.h"
 
 
 /**

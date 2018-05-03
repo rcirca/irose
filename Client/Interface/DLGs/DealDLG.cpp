@@ -18,7 +18,7 @@
 #include "../../misc/gameutil.h"
 
 
-#include "../../../TGameCtrl/ResourceMgr.h"
+#include "tgamectrl/resourcemgr.h"
 
 
 #define DS_CAPTION_SX	31

@@ -1,6 +1,6 @@
 #ifndef _CTCMDNUMBERINPUT_
 #define _CTCMDNUMBERINPUT_
-#include "../../../tgamectrl/tcommand.h"
+#include "tgamectrl/tcommand.h"
 #include "../../Common/CItem.h"
 
 

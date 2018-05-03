@@ -1,7 +1,7 @@
 #pragma once
 
 #include "CExternalUI.h"
-#include "../../../TGameCtrl/TDialog.h"
+#include "tgamectrl/tdialog.h"
 
 class CWarningDlg: public CTDialog
 {

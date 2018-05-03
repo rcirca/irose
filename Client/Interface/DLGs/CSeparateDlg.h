@@ -1,6 +1,6 @@
 #ifndef _CSeparateDlg_
 #define _CSeparateDlg_
-#include "tdialog.h"
+#include "tgamectrl/tdialog.h"
 #include "../../GameCommon/IObserver.h"
 #include "subclass/CSlot.h"
 #include <vector>

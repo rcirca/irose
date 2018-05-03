@@ -1,7 +1,7 @@
 #ifndef _CEffectString_
 #define _CEffectString_
 
-#include "TSplitString.h"
+#include "tgamectrl/TSplitString.h"
 /**
 * 시간에 따라 폰트 색깔및 알파값이 변경되는 String출력용 Class
 *	- Outline Font의 경우 Alpha값이 변경될경우 Outline이 같이 변경되지 않는 상황으로 사용안되고 있다.

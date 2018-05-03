@@ -9,11 +9,11 @@
 #include "../it_mgr.h"
 
 
-#include "ResourceMgr.h"
-#include "ZListBox.h"
-#include "TCaption.h"
-#include "TImage.h"
-#include "TButton.h"
+#include "tgamectrl/resourcemgr.h"
+#include "tgamectrl/zlistbox.h"
+#include "tgamectrl/tcaption.h"
+#include "tgamectrl/timage.h"
+#include "tgamectrl/tbutton.h"
 
 
 const int BG_IMAGE_HEIGHT = 150;

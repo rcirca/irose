@@ -1,8 +1,8 @@
 #ifndef _CSYSTEMMSGDLG_
 #define _CSYSTEMMSGDLG_
 
-#include "TDialog.h"
-#include "TSplitString.h"
+#include "tgamectrl/tdialog.h"
+#include "tgamectrl/TSplitString.h"
 
 /**
 * 게임화면에서 상단 중간에 나오는 팁및 공지사항을 보여주기 위한 다이얼로그

@@ -1,7 +1,7 @@
 #ifndef _ItemCommand_
 #define _ItemCommand_
 /// 인벤토리에서 장착 아이템의 기본 Action Command
-#include "../../tgamectrl/tcommand.h"
+#include "tgamectrl/tcommand.h"
 
 struct tagBaseITEM;
 class CTCmdItemEquipInInventory : public CTCommand

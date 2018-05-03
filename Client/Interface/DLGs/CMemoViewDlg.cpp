@@ -7,7 +7,7 @@
 #include "CCommDlg.h"
 
 
-#include "TButton.h"
+#include "tgamectrl/tbutton.h"
 CMemoViewDlg::CMemoViewDlg(void)
 {
 }

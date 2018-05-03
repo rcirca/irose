@@ -9,7 +9,7 @@
 #include "../CToolTipMgr.h"
 
 
-#include "TEditBox.h"
+#include "tgamectrl/teditbox.h"
 
 CBankWindowDlg::CBankWindowDlg(void)
 {

@@ -1,8 +1,8 @@
 #ifndef _CQuestListItem_
 #define _CQuestListItem_
-#include "winctrl.h"
+#include "tgamectrl/winctrl.h"
 
-#include "SinglelineString.h"
+#include "tgamectrl/singlelinestring.h"
 /**
 * 퀘스트창에서 퀘스트목록 ZListBox의 item Class
 *

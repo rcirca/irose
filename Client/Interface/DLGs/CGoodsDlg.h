@@ -1,6 +1,6 @@
 #ifndef _CGoodsDlg_
 #define _CGoodsDlg_
-#include "tdialog.h"
+#include "tgamectrl/tdialog.h"
 #include "subclass/CSlot.h"
 /**
 * 개인상점에 물품 등록시 사용되는 UI Dialog

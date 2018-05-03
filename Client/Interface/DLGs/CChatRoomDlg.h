@@ -1,9 +1,9 @@
 #ifndef _ChatRoomDlg_
 #define _ChatRoomDlg_
-#include "TDialog.h"
+#include "tgamectrl/tdialog.h"
 #include "../../GameData/CChatRoom.h"
 #include "../../GameCommon/IObserver.h"
-#include "IActionListener.h"
+#include "tgamectrl/iactionlistener.h"
 /**
 * 커뮤니티 창에서 채팅룸을  위한 UI Dialog
 *	- Observable : CChatRoom

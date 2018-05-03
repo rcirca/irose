@@ -1,7 +1,7 @@
 #ifndef _CChatFilterDlg_
 #define _CChatFilterDlg_
 
-#include "tdialog.h"
+#include "tgamectrl/tdialog.h"
 #include "Chattingdlg.h"
 
 

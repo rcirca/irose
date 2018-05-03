@@ -1,7 +1,7 @@
 #ifndef _COPTIONDLG_
 #define _COPTIONDLG_
 
-#include "../../../TGameCtrl/TDialog.h"
+#include "tgamectrl/tdialog.h"
 #include "../../CClientStorage.h"
 
 ///현재 지원되는 스크린 해상도및 주파수들( Key를 해상도로 한다 )

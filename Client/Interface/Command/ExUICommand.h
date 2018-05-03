@@ -1,6 +1,6 @@
 #ifndef _EXUICOMMAND_
 #define _EXUICOMMAND_
-#include "../../../tgamectrl/tcommand.h"
+#include "tgamectrl/tcommand.h"
 #include <string>
 
 /// 게임선택창에서 캐릭터 삭제요청

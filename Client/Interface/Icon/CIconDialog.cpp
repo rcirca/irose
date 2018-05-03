@@ -8,7 +8,7 @@
 #include "../command/uicommand.h"
 #include "../TypeResource.h"
 
-#include "ResourceMgr.h"
+#include "tgamectrl/resourcemgr.h"
 CIconDialog::CIconDialog( )
 {
 	m_pDragItem = NULL;

@@ -6,7 +6,7 @@
 #include "../../../Game.h"
 #include "../../../Util/classTime.h"
 
-#include "ZListBox.h"
+#include "tgamectrl/zlistbox.h"
 CMailBoxListItem::CMailBoxListItem( const char* pszName, const char* pszMemo , DWORD dwRecvTime )
 {
 	SetHeight( 20 );

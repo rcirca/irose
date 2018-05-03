@@ -1,6 +1,6 @@
 #ifndef _CIndicate_
 #define _CIndicate_
-#include "winctrl.h"
+#include "tgamectrl/winctrl.h"
 
 //*----------------------------------------------------------------------------------/
 /// 존 진입시 혹은 퀘스트 시작, 종료시 화면에 표시하는 Class

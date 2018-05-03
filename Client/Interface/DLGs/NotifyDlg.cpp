@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include ".\notifydlg.h"
 
-#include "TButton.h"
+#include "tgamectrl/tbutton.h"
 
 CNotifyDlg::CNotifyDlg(void)
 {

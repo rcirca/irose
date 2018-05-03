@@ -35,11 +35,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHO_WS_LIB", "Server\SHO_WS
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TriggerVFS", "Tools\TriggerVFS\TriggerVFS.vcxproj", "{3D8FB37B-21F3-4DEF-9B78-6FE270C73494}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TGameCtrl", "TGameCtrl\TGameCtrl.vcxproj", "{25FC645B-A461-4FDD-848A-4F7C5522313A}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "engine", "engine\engine.vcxproj", "{423F6727-70C6-4D7A-97BA-97C72FBC169B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "triggerinfo", "src\triggerinfo\triggerinfo.vcxproj", "{DE7958CD-934E-4AF9-8A22-CCE329B364FB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tgamectrl", "src\tgamectrl\tgamectrl.vcxproj", "{25FC645B-A461-4FDD-848A-4F7C5522313A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,10 +87,6 @@ Global
 		{3D8FB37B-21F3-4DEF-9B78-6FE270C73494}.debug|x86.Build.0 = Debug|Win32
 		{3D8FB37B-21F3-4DEF-9B78-6FE270C73494}.release|x86.ActiveCfg = Release|Win32
 		{3D8FB37B-21F3-4DEF-9B78-6FE270C73494}.release|x86.Build.0 = Release|Win32
-		{25FC645B-A461-4FDD-848A-4F7C5522313A}.debug|x86.ActiveCfg = Debug|Win32
-		{25FC645B-A461-4FDD-848A-4F7C5522313A}.debug|x86.Build.0 = Debug|Win32
-		{25FC645B-A461-4FDD-848A-4F7C5522313A}.release|x86.ActiveCfg = Release|Win32
-		{25FC645B-A461-4FDD-848A-4F7C5522313A}.release|x86.Build.0 = Release|Win32
 		{423F6727-70C6-4D7A-97BA-97C72FBC169B}.debug|x86.ActiveCfg = Debug|Win32
 		{423F6727-70C6-4D7A-97BA-97C72FBC169B}.debug|x86.Build.0 = Debug|Win32
 		{423F6727-70C6-4D7A-97BA-97C72FBC169B}.release|x86.ActiveCfg = Release|Win32
@@ -99,6 +95,10 @@ Global
 		{DE7958CD-934E-4AF9-8A22-CCE329B364FB}.debug|x86.Build.0 = Debug|Win32
 		{DE7958CD-934E-4AF9-8A22-CCE329B364FB}.release|x86.ActiveCfg = release|Win32
 		{DE7958CD-934E-4AF9-8A22-CCE329B364FB}.release|x86.Build.0 = release|Win32
+		{25FC645B-A461-4FDD-848A-4F7C5522313A}.debug|x86.ActiveCfg = debug|Win32
+		{25FC645B-A461-4FDD-848A-4F7C5522313A}.debug|x86.Build.0 = debug|Win32
+		{25FC645B-A461-4FDD-848A-4F7C5522313A}.release|x86.ActiveCfg = release|Win32
+		{25FC645B-A461-4FDD-848A-4F7C5522313A}.release|x86.Build.0 = release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

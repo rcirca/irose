@@ -13,7 +13,7 @@
 
 #include "../../../System/CGame.h"
 
-#include "../../../../TGameCtrl/JComboBox.h"
+#include "tgamectrl/jcombobox.h"
 CMakeStateNormal::CMakeStateNormal( CMakeDLG* pParent)
 { 
 	m_pParent = pParent;

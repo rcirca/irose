@@ -5,7 +5,7 @@
 
 #include "CNameBox.h"
 #include "../util/Localizing.h"
-#include "SplitHangul.h"
+#include "tgamectrl/SplitHangul.h"
 #include <algorithm>
 
 

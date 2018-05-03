@@ -19,11 +19,11 @@
 #include "../../Country.h"
 
 
-#include "TButton.h"
-#include "TabbedPane.h"
-#include "ZListBox.h"
-#include "JContainer.h"
-#include "ResourceMgr.h"
+#include "tgamectrl/tbutton.h"
+#include "tgamectrl/tabbedpane.h"
+#include "tgamectrl/zlistbox.h"
+#include "tgamectrl/jcontainer.h"
+#include "tgamectrl/resourcemgr.h"
 #include "../CClanMarkView.h"
 CClanDlg::CClanDlg(void)
 {

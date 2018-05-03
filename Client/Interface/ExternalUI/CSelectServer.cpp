@@ -12,8 +12,8 @@
 
 #include "../Command/CTCmdHotExec.h"
 #include "../../Debug.h"
-#include "TListBox.h"
-#include "TMsgBox.h"
+#include "tgamectrl/tlistbox.h"
+#include "tgamectrl/tmsgbox.h"
 
 CSelectServer::CSelectServer()
 {

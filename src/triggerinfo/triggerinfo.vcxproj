@@ -51,8 +51,8 @@
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
     <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='release|Win32'">false</PostBuildEventUseInBuild>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='release|Win32'">triggerinfo</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">triggerinfo</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">$(ProjectName)</TargetName>
     <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">

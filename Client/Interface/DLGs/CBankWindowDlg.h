@@ -1,7 +1,7 @@
 #ifndef _CBankWindowDlg_
 #define _CBankWindowDlg_
-#include "tdialog.h"
-#include "SinglelineString.h"
+#include "tgamectrl/tdialog.h"
+#include "tgamectrl/singlelinestring.h"
 
 
 /**

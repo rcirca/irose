@@ -1,6 +1,6 @@
 #ifndef _iconcommand_
 #define _iconcommand_
-#include "../../TGameCtrl/TCommand.h"
+#include "tgamectrl/tcommand.h"
 //class CTCmdItemIconInBuyList : public CTCommand
 //{
 //public:

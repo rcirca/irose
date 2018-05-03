@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #include ".\cmsgbox.h"
-#include "TCommand.h"
-#include "TMsgBox.h"
-#include "TListBox.h"
+#include "tgamectrl/tcommand.h"
+#include "tgamectrl/tmsgbox.h"
+#include "tgamectrl/tlistbox.h"
 
 #include "../IO_ImageRes.h"
 

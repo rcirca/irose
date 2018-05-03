@@ -2,7 +2,7 @@
 #include ".\cchatfilterdlg.h"
 #include "../it_mgr.h"
 
-#include "TCheckBox.h"
+#include "tgamectrl/tcheckbox.h"
 CChatFilterDlg::CChatFilterDlg(void)
 {
 

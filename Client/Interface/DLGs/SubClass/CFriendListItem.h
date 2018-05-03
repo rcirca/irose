@@ -1,6 +1,6 @@
 #ifndef _CFriendListItem_
 #define _CFriendListItem_
-#include "winctrl.h"
+#include "tgamectrl/winctrl.h"
 /**
 * 커뮤니티 창에서 친구 리스트에 사용되는 Item Class
 *

@@ -8,7 +8,7 @@
 #include "Quest_FUNC.h"
 #include "Game_FUNC.h"
 #include "..\IO_EVENT.h"
-#include "TGameCTRL.h"
+#include "tgamectrl/TGameCtrl.h"
 #include "..\interface\It_mgr.h"
 #include "OBJECT.h"
 

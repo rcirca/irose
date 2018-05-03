@@ -1,6 +1,6 @@
 #ifndef _CPatDlg_
 #define _CPatDlg_
-#include "../../../tgamectrl/tdialog.h"
+#include "tgamectrl/tdialog.h"
 
 /////////////////////////////////////////////////////////////////////////////////
 /// @brief PAT용 DIALOG ( 장착창 & 인벤토리 )

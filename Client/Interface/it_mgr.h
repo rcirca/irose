@@ -12,8 +12,8 @@
 #include "../Game.h"
 
 
-#include "TGameCtrl.h"
-#include "TCommandQ.h"
+#include "tgamectrl/TGameCtrl.h"
+#include "tgamectrl/tcommandq.h"
 
 #include <list>
 

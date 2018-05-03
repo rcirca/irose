@@ -1,6 +1,6 @@
 #include "StdAfx.h"
 #include ".\tdefaulttreemodel.h"
-#include "TDefaultTreeNode.h"
+#include "tgamectrl/tdefaulttreenode.h"
 
 CTDefaultTreeModel::CTDefaultTreeModel(void)
 {

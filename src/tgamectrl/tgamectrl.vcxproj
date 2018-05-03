@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|Win32">
+      <Configuration>debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xml\DlgAvata.xml" />
+    <None Include="xml\DlgBase.xml" />
+    <None Include="xml\DlgChat.xml" />
+    <None Include="xml\DlgDeal.xml" />
+    <None Include="xml\DlgDrop.xml" />
+    <None Include="xml\DlgExchange.xml" />
+    <None Include="xml\DlgInven.xml" />
+    <None Include="xml\DlgMinimap.xml" />
+    <None Include="xml\DlgMsg.xml" />
+    <None Include="xml\DlgQuery.xml" />
+    <None Include="xml\DlgQuickBar.xml" />
+    <None Include="xml\DlgRestart.xml" />
+    <None Include="xml\DlgStore.xml" />
+    <None Include="xml\DlgSystem.xml" />
+    <None Include="xml\DlgTarget.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ActionEvent.cpp" />
+    <ClCompile Include="src\ActionListenerList.cpp" />
+    <ClCompile Include="src\CEventHandler.cpp" />
+    <ClCompile Include="src\CToolTip.cpp" />
+    <ClCompile Include="src\ImageIDMgr.cpp" />
+    <ClCompile Include="src\ImeView.cpp" />
+    <ClCompile Include="src\ITControl.cpp" />
+    <ClCompile Include="src\JComboBox.cpp" />
+    <ClCompile Include="src\JContainer.cpp" />
+    <ClCompile Include="src\JLetter.cpp" />
+    <ClCompile Include="src\JListBox.cpp" />
+    <ClCompile Include="src\JString.cpp" />
+    <ClCompile Include="src\JStringParser.cpp" />
+    <ClCompile Include="src\JTable.cpp" />
+    <ClCompile Include="src\ResourceMgr.cpp" />
+    <ClCompile Include="src\SinglelineString.cpp" />
+    <ClCompile Include="src\SplitHangul.cpp" />
+    <ClCompile Include="src\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\TabbedPane.cpp" />
+    <ClCompile Include="src\TAnimation.cpp" />
+    <ClCompile Include="src\TButton.cpp" />
+    <ClCompile Include="src\TCandidateWindow.cpp" />
+    <ClCompile Include="src\TCandidateWindowHanja.cpp" />
+    <ClCompile Include="src\TCandidateWindowList.cpp" />
+    <ClCompile Include="src\TCaption.cpp" />
+    <ClCompile Include="src\TCheckBox.cpp" />
+    <ClCompile Include="src\TComboBox.cpp" />
+    <ClCompile Include="src\TCommand.cpp" />
+    <ClCompile Include="src\TCommandQ.cpp" />
+    <ClCompile Include="src\TContainer.cpp" />
+    <ClCompile Include="src\TContainerItem.cpp" />
+    <ClCompile Include="src\TControlMgr.cpp" />
+    <ClCompile Include="src\TDefaultListCellRenderer.cpp" />
+    <ClCompile Include="src\TDefaultTreeModel.cpp" />
+    <ClCompile Include="src\TDefaultTreeNode.cpp" />
+    <ClCompile Include="src\TDefaultTreeNodeRenderer.cpp" />
+    <ClCompile Include="src\TDialog.cpp" />
+    <ClCompile Include="src\TEditBox.cpp" />
+    <ClCompile Include="src\TFrame.cpp" />
+    <ClCompile Include="src\TGameCtrl.cpp" />
+    <ClCompile Include="src\TGuage.cpp" />
+    <ClCompile Include="src\TImage.cpp" />
+    <ClCompile Include="src\TIme2.cpp" />
+    <ClCompile Include="src\TListBox.cpp" />
+    <ClCompile Include="src\TListCellRenderer.cpp" />
+    <ClCompile Include="src\TMsgBox.cpp" />
+    <ClCompile Include="src\TObject.cpp" />
+    <ClCompile Include="src\TPane.cpp" />
+    <ClCompile Include="src\TPushButton.cpp" />
+    <ClCompile Include="src\TRadioBox.cpp" />
+    <ClCompile Include="src\TRadioButton.cpp" />
+    <ClCompile Include="src\Tree.cpp" />
+    <ClCompile Include="src\TreePath.cpp" />
+    <ClCompile Include="src\TScrollBar.cpp" />
+    <ClCompile Include="src\TScrollBarType.cpp" />
+    <ClCompile Include="src\TScrollBox.cpp" />
+    <ClCompile Include="src\TScrollBoxType.cpp" />
+    <ClCompile Include="src\TSlider.cpp" />
+    <ClCompile Include="src\TSplitString.cpp" />
+    <ClCompile Include="src\TStatic.cpp" />
+    <ClCompile Include="src\TStatusBar.cpp" />
+    <ClCompile Include="src\WinCtrl.cpp" />
+    <ClCompile Include="src\ZListBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\tgamectrl\ActionEvent.h" />
+    <ClInclude Include="include\tgamectrl\ActionListenerList.h" />
+    <ClInclude Include="include\tgamectrl\CEventHandler.h" />
+    <ClInclude Include="include\tgamectrl\CToolTip.h" />
+    <ClInclude Include="include\tgamectrl\IActionListener.h" />
+    <ClInclude Include="include\tgamectrl\IListCellRenderer.h" />
+    <ClInclude Include="include\tgamectrl\ImageIDMgr.h" />
+    <ClInclude Include="include\tgamectrl\ImeView.h" />
+    <ClInclude Include="include\tgamectrl\IScrollModel.h" />
+    <ClInclude Include="include\tgamectrl\ITControl.h" />
+    <ClInclude Include="include\tgamectrl\ITDraw.h" />
+    <ClInclude Include="include\tgamectrl\ITFont.h" />
+    <ClInclude Include="include\tgamectrl\ITreeModel.h" />
+    <ClInclude Include="include\tgamectrl\ITreeNode.h" />
+    <ClInclude Include="include\tgamectrl\ITreeNodeRenderer.h" />
+    <ClInclude Include="include\tgamectrl\ITSound.h" />
+    <ClInclude Include="include\tgamectrl\JComboBox.h" />
+    <ClInclude Include="include\tgamectrl\JContainer.h" />
+    <ClInclude Include="include\tgamectrl\JLetter.h" />
+    <ClInclude Include="include\tgamectrl\JListBox.h" />
+    <ClInclude Include="include\tgamectrl\JString.h" />
+    <ClInclude Include="include\tgamectrl\JStringParser.h" />
+    <ClInclude Include="include\tgamectrl\JTable.h" />
+    <ClInclude Include="include\tgamectrl\resource.h" />
+    <ClInclude Include="include\tgamectrl\ResourceMgr.h" />
+    <ClInclude Include="include\tgamectrl\SinglelineString.h" />
+    <ClInclude Include="include\tgamectrl\SplitHangul.h" />
+    <ClInclude Include="include\tgamectrl\TabbedPane.h" />
+    <ClInclude Include="include\tgamectrl\TAnimation.h" />
+    <ClInclude Include="include\tgamectrl\TButton.h" />
+    <ClInclude Include="include\tgamectrl\TCandidateWindow.h" />
+    <ClInclude Include="include\tgamectrl\TCandidateWindowHanja.h" />
+    <ClInclude Include="include\tgamectrl\TCandidateWindowList.h" />
+    <ClInclude Include="include\tgamectrl\TCaption.h" />
+    <ClInclude Include="include\tgamectrl\TCheckBox.h" />
+    <ClInclude Include="include\tgamectrl\TComboBox.h" />
+    <ClInclude Include="include\tgamectrl\TCommand.h" />
+    <ClInclude Include="include\tgamectrl\TCommandQ.h" />
+    <ClInclude Include="include\tgamectrl\TContainer.h" />
+    <ClInclude Include="include\tgamectrl\TContainerItem.h" />
+    <ClInclude Include="include\tgamectrl\TControlMgr.h" />
+    <ClInclude Include="include\tgamectrl\TDefaultListCellRenderer.h" />
+    <ClInclude Include="include\tgamectrl\TDefaultTreeModel.h" />
+    <ClInclude Include="include\tgamectrl\TDefaultTreeNode.h" />
+    <ClInclude Include="include\tgamectrl\TDefaultTreeNodeRenderer.h" />
+    <ClInclude Include="include\tgamectrl\TDialog.h" />
+    <ClInclude Include="include\tgamectrl\TEditBox.h" />
+    <ClInclude Include="include\tgamectrl\TFrame.h" />
+    <ClInclude Include="include\tgamectrl\TGameCtrl.h" />
+    <ClInclude Include="include\tgamectrl\TGuage.h" />
+    <ClInclude Include="include\tgamectrl\TImage.h" />
+    <ClInclude Include="include\tgamectrl\TIme2.h" />
+    <ClInclude Include="include\tgamectrl\TListBox.h" />
+    <ClInclude Include="include\tgamectrl\TListCellRenderer.h" />
+    <ClInclude Include="include\tgamectrl\TMsgBox.h" />
+    <ClInclude Include="include\tgamectrl\TObject.h" />
+    <ClInclude Include="include\tgamectrl\TPane.h" />
+    <ClInclude Include="include\tgamectrl\TPushButton.h" />
+    <ClInclude Include="include\tgamectrl\TRadioBox.h" />
+    <ClInclude Include="include\tgamectrl\TRadioButton.h" />
+    <ClInclude Include="include\tgamectrl\Tree.h" />
+    <ClInclude Include="include\tgamectrl\TreePath.h" />
+    <ClInclude Include="include\tgamectrl\TScrollBar.h" />
+    <ClInclude Include="include\tgamectrl\TScrollBarType.h" />
+    <ClInclude Include="include\tgamectrl\TScrollBox.h" />
+    <ClInclude Include="include\tgamectrl\TScrollBoxType.h" />
+    <ClInclude Include="include\tgamectrl\TSlider.h" />
+    <ClInclude Include="include\tgamectrl\TSplitString.h" />
+    <ClInclude Include="include\tgamectrl\TStatic.h" />
+    <ClInclude Include="include\tgamectrl\TStatusBar.h" />
+    <ClInclude Include="include\tgamectrl\winctrl.h" />
+    <ClInclude Include="include\tgamectrl\ZListBox.h" />
+    <ClInclude Include="src\stdafx.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25FC645B-A461-4FDD-848A-4F7C5522313A}</ProjectGuid>
+    <RootNamespace>TGameCtrl</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">$(SolutionDir)build\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(SolutionDir)build\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='release|Win32'">false</PostBuildEventUseInBuild>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">$(ProjectName)</TargetName>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\dx90csdk\Include;$(ProjectDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TGAMECTRL_STATIC;_DEBUG;</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadeddebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <debugInformationFormat>EditAndContinue</debugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName).dll</OutputFile>
+      <GeneratedebugInformation>true</GeneratedebugInformation>
+      <ProgramDatabaseFile>$(OutDir)TGameCtrl.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <BaseAddress>0x66000000</BaseAddress>
+      <ImportLibrary>../lib/$(Platform)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(OutDir)TGameCtrl_d.lib $(IROSE_ROOT)\lib\$(Platform)\$(Configuration)\ /s /Y</Command>
+      <Message>Not Used Anymore</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\dx90csdk\Include;$(ProjectDir)include\$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TGAMECTRL_STATIC;</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <debugInformationFormat>
+      </debugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;comsuppw.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(IROSE_ROOT)\3rdParty\dx90csdk\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GeneratedebugInformation>true</GeneratedebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <BaseAddress>0x66000000</BaseAddress>
+      <ImportLibrary>../lib/$(Platform)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

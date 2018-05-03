@@ -79,7 +79,7 @@ void CImeView::SetState(BOOL fOpen)
 	}
 }
 
-CImeView::SetCompositionFont(LPLOGFONT lf)
+BOOL CImeView::SetCompositionFont(LPLOGFONT lf)
 {
 	BOOL ret;
 	if (Enter()) {

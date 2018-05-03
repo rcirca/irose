@@ -1,7 +1,7 @@
 #ifndef _SYSTEMDLG_
 #define _SYSTEMDLG_
 
-#include "TDialog.h"
+#include "tgamectrl/tdialog.h"
 
 /**
 * 게임종료및 캐릭터 선택창으로 이동선택을 위한 다이얼로그

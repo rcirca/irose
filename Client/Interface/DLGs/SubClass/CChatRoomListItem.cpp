@@ -3,7 +3,7 @@
 #include "../../../Game.h"
 #include "../../it_mgr.h"
 #include "../../../GameData/CChatRoom.h"
-#include "ZListBox.h"
+#include "tgamectrl/zlistbox.h"
 
 CChatRoomListItem::CChatRoomListItem( WORD wID, BYTE btRoomType, BYTE btUserCount, const char* pszTitle )
 {

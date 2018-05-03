@@ -1,7 +1,7 @@
 #ifndef _CAVATARINFODLG_
 #define _CAVATARINFODLG_
 
-#include "../../tgamectrl/tdialog.h"
+#include "tgamectrl/tdialog.h"
 #include "../gamecommon/IObserver.h"
 #include "subclass/CSlot.h"
 

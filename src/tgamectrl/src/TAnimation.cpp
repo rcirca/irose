@@ -1,6 +1,6 @@
 #include "StdAfx.h"
 #include ".\tanimation.h"
-#include "TFrame.h"
+#include "tgamectrl/tframe.h"
 #include <Mmsystem.h>
 CTAnimation::CTAnimation(void)
 {

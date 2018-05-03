@@ -14,7 +14,7 @@
 #include "SystemProcScript.h"
 #include "CGame.h"
 #include "IO_Event.h"
-#include "TButton.h"
+#include "tgamectrl/tbutton.h"
 #include "../Tutorial/TutorialEventUtility.h"
 #include "../Tutorial/TutorialEventManager.h"
 #include "../Event/Quest_FUNC.h"

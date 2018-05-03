@@ -2,7 +2,7 @@
 #include ".\clanregistnotice.h"
 #include "../../Network/CNetwork.h"
 
-#include "TEditBox.h"
+#include "tgamectrl/teditbox.h"
 
 CClanRegistNotice::CClanRegistNotice(void)
 {

@@ -3,7 +3,7 @@
 
 
 #include "../../Common/CItem.h"
-#include "../../../TGameCtrl/TObject.h"
+#include "tgamectrl/tobject.h"
 #include "../CInfo.h"
 //----------------------------------------------------------------------------------------------------
 /// 

@@ -5,7 +5,7 @@
 #include "../../IO_ImageRes.h"
 //#include "../../../Util/Localizing.h"
 
-#include "ResourceMgr.h"
+#include "tgamectrl/resourcemgr.h"
 //*-------------------------------------------------------------------------------/
 // @param iIndex : 추가시 유의
 //			0  - top일경우

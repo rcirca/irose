@@ -6,14 +6,14 @@
 #include "../it_mgr.h"
 
 
-#include "TScrollBar.h"
-#include "TEditBox.h"
-#include "TListBox.h"
-#include "JContainer.h"
-#include "TabbedPane.h"
-#include "TComboBox.h"
-#include "TPane.h"
-#include "ActionEvent.h"
+#include "tgamectrl/tscrollbar.h"
+#include "tgamectrl/teditbox.h"
+#include "tgamectrl/tlistbox.h"
+#include "tgamectrl/jcontainer.h"
+#include "tgamectrl/tabbedpane.h"
+#include "tgamectrl/tcombobox.h"
+#include "tgamectrl/tpane.h"
+#include "tgamectrl/actionevent.h"
 
 const POINT c_ptDrawMemberName[] = { {  18, 60 }, { 18, 80 } ,{ 18, 100 }, { 18, 120 },
 									 { 105, 60 }, {105, 80 }, {105, 100 }, {105, 120 }

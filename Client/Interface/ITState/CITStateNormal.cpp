@@ -8,8 +8,8 @@
 #include "../Icon/CIconDialog.h"
 #include "../../System/CGame.h"
 
-#include "TEditBox.h"
-#include "TControlMgr.h"
+#include "tgamectrl/teditbox.h"
+#include "tgamectrl/tcontrolmgr.h"
 
 CITStateNormal::CITStateNormal(void)
 {

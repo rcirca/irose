@@ -4,7 +4,7 @@
 #include "Game.h"
 #include "IO_Terrain.h"
 	#if defined( _DEBUG )
-	#include "Tgamectrl.h"
+	#include "tgamectrl/TGameCtrl.h"
 	#endif
 #else
 #include "GS_ThreadZONE.h"

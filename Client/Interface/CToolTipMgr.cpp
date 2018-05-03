@@ -17,7 +17,7 @@
 #include "../object.h"
 #include "../gamecommon/Skill.h"
 
-#include "SplitHangul.h"
+#include "tgamectrl/SplitHangul.h"
 CToolTipMgr::CToolTipMgr(void)
 {
 	m_bHasDrawInfo = false;

@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include ".\clanorganizedlg.h"
-#include "JTable.h"
+#include "tgamectrl/jtable.h"
 #include "subclass/ClanMark.h"
 #include "../IO_ImageRes.h"
 #include "../CTDrawImpl.h"
@@ -8,7 +8,7 @@
 #include "../../Network/CNetwork.h"
 #include "../../GameCommon/CFilterWord.h"
 
-#include "TEditBox.h"
+#include "tgamectrl/teditbox.h"
 CClanOrganizeDlg::CClanOrganizeDlg(void)
 {
 	m_iSelectedClanBack		= 0;

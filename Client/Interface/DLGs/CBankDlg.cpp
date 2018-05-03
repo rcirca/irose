@@ -19,9 +19,9 @@
 
 #include "../Country.h"
 
-#include "TRadioBox.h"
-#include "TRadioButton.h"
-#include "TButton.h"
+#include "tgamectrl/tradiobox.h"
+#include "tgamectrl/tradiobutton.h"
+#include "tgamectrl/tbutton.h"
 
 
 

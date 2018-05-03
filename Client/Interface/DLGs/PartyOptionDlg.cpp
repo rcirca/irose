@@ -9,9 +9,9 @@
 
 
 
-#include "TButton.h"
-#include "TRadioBox.h"
-#include "TCheckBox.h"
+#include "tgamectrl/tbutton.h"
+#include "tgamectrl/tradiobox.h"
+#include "tgamectrl/tcheckbox.h"
 CPartyOptionDlg::CPartyOptionDlg(void)
 {
 	m_party_rule = 0;

@@ -3,7 +3,7 @@
 #include "Game.h"
 #include "Util/VFSManager.h"
 #include "../Util/CFileSystem.h"
-#include "ResourceMgr.h"
+#include "tgamectrl/resourcemgr.h"
 #include <algorithm>
 
 using namespace std;

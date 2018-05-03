@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include ".\caddfrienddlg.h"
-#include "TEditBox.h"
+#include "tgamectrl/teditbox.h"
 #include "CCommDlg.h"
 #include "../it_mgr.h"
 #include "../../Network/CNetwork.h"

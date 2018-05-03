@@ -1,6 +1,6 @@
 #include "StdAfx.h"
 #include ".\tlistcellrenderer.h"
-#include "TContainerItem.h"
+#include "tgamectrl/tcontaineritem.h"
 #include "TStatic.h"
 #include <assert.h>
 CTListCellRenderer::CTListCellRenderer(void)

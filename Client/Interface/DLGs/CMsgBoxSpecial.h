@@ -1,6 +1,6 @@
 #ifndef _CMsgBoxSpecial_
 #define _CMsgBoxSpecial_
-#include "tmsgbox.h"
+#include "tgamectrl/tmsgbox.h"
 
 /**
 * 서버와의 종료 대기를 표시하기 위한 다이얼로그

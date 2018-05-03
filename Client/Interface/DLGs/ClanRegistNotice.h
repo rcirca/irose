@@ -1,5 +1,5 @@
 #ifndef _CClanRegistNotice_
-#include "tdialog.h"
+#include "tgamectrl/tdialog.h"
 
 /**
 * 클랜 공지사항 등록에 사용되는 다이얼로그

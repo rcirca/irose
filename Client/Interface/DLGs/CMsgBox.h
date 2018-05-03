@@ -1,6 +1,6 @@
 #ifndef _CMSGBOX_
 #define _CMSGBOX_
-#include "TMsgBox.h"
+#include "tgamectrl/tmsgbox.h"
 #include "subclass/cslot.h"
 class CTCommand;
 class CIcon;

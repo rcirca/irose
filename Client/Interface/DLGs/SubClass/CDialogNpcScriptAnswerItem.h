@@ -1,10 +1,10 @@
 #ifndef _CDialogNpcScriptAnswerItem_
 #define _CDialogNpcScriptAnswerItem_
 
-#include "JStringParser.h"
+#include "tgamectrl/JStringParser.h"
 
-#include "winctrl.h"
-#include "TSplitString.h"
+#include "tgamectrl/winctrl.h"
+#include "tgamectrl/TSplitString.h"
 
 /**
 * NPC 대화시 유저가 선택할 Scirpt를  출력할 ZLISTBOX를 위한 Item Class

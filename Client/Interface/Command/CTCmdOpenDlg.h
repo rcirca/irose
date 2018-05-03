@@ -1,6 +1,6 @@
 #ifndef _CTCMDOPENDLG_
 #define _CTCMDOPENDLG_
-#include "tcommand.h"
+#include "tgamectrl/tcommand.h"
 #include "../dlgs/cmsgbox.h"
 
 class CTCmdNumberInput;

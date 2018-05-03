@@ -1,7 +1,7 @@
 #ifndef _PrivateChatDlg_
 #define _PrivateChatDlg_
-#include "TDialog.h"
-#include "IActionListener.h"
+#include "tgamectrl/tdialog.h"
+#include "tgamectrl/iactionlistener.h"
 
 /**
 * 1:1대화시 사용되는 다이얼로그

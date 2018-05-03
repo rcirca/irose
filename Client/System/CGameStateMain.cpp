@@ -35,7 +35,7 @@
 #include "../GameProc/TargetManager.h"
 #include "../GameData/CParty.h"
 #include "../GameData/CClan.h"
-#include "TIme2.h"
+#include "tgamectrl/time2.h"
 #include "../GameProc/LiveCheck.h"
 #include "../GameProc/DelayedExp.h"
 
@@ -46,8 +46,8 @@
 #include "SFX/SFXManager.h"
 #include "SFX/ISFX.h"
 #include "SFX/SFXFont.h"
-#include "TControlMgr.h"
-#include "TEditBox.h"
+#include "tgamectrl/tcontrolmgr.h"
+#include "tgamectrl/teditbox.h"
 
 #include "../Tutorial/TutorialEventManager.h"
 

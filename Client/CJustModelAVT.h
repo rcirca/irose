@@ -3,7 +3,7 @@
 
 #include "CModelCHAR.h"
 #include <string>
-#include "TCommandQ.h"
+#include "tgamectrl/tcommandq.h"
 
 class CAvatarState;
 ///

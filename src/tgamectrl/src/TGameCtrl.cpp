@@ -6,6 +6,8 @@
 #include "TControlMgr.h"
 #include "ResourceMgr.h"
 #include "TIme2.h"
+
+#ifdef TGAMECTRL_DLL
 BOOL APIENTRY DllMain( HANDLE hModule, 
                        DWORD  ul_reason_for_call, 
                        LPVOID lpReserved
@@ -21,6 +23,7 @@ BOOL APIENTRY DllMain( HANDLE hModule,
 	}
     return TRUE;
 }
+#endif
 
 TGAMECTRL_API void it_SetKeyboardInputType( short nInputType )
 {

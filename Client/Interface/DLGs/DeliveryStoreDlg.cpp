@@ -11,7 +11,7 @@
 #include "CDialogDlg.h"
 
 
-#include "TButton.h"
+#include "tgamectrl/tbutton.h"
 
 CDeliveryStoreDlg::CDeliveryStoreDlg(void)
 {

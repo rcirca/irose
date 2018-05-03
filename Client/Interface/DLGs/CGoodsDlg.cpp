@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include ".\cgoodsdlg.h"
 #include "../Icon/CIconItem.h"
-#include "TEditBox.h"
+#include "tgamectrl/teditbox.h"
 #include "../../GameData/CPrivateStore.h"
 #include "../../common/io_stb.h"
 CGoodsDlg::CGoodsDlg( int iDlgType)

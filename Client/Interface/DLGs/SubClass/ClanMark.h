@@ -1,6 +1,6 @@
 #ifndef _CClanMark_
 #define _CClanMark_
-#include "winctrl.h"
+#include "tgamectrl/winctrl.h"
 
 /**
 * 클랜 창설시 유저가 선택할수 있는 클랜마크표시 class

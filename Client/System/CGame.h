@@ -7,7 +7,7 @@
 #include "../interface/CInfo.h"
 #include "../util/FileVersionInfo.h"
 
-#include "TCommandQ.h"
+#include "tgamectrl/tcommandq.h"
 
 #include "../Interface/ExternalUI/CSelectServer.h"
 

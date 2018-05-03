@@ -3,8 +3,8 @@
 #include "ITreeNode.h"
 #include "ITreeModel.h"
 #include "ITreeNodeRenderer.h"
-#include "TDefaultTreeModel.h"
-#include "TDefaultTreeNode.h"
+#include "tgamectrl/tdefaulttreemodel.h"
+#include "tgamectrl/tdefaulttreenode.h"
 CTree::CTree()
 {
 	m_pTreeModel		= NULL;

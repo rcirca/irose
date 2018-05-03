@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include ".\inputnamedlg.h"
 #include "../command/uicommand.h"
-#include "TEditBox.h"
+#include "tgamectrl/teditbox.h"
 CInputNameDlg::CInputNameDlg(void)
 {
 	m_command = NULL;

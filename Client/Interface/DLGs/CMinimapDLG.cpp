@@ -24,12 +24,12 @@
 #include "../../../engine/include/zz_interface.h"
 #include "../../GameData/CParty.h"
 
-#include "TPane.h"
-#include "TCaption.h"
-#include "ResourceMgr.h"
-#include "TAnimation.h"
-#include "TFrame.h"
-#include "TImage.h"
+#include "tgamectrl/tpane.h"
+#include "tgamectrl/tcaption.h"
+#include "tgamectrl/resourcemgr.h"
+#include "tgamectrl/tanimation.h"
+#include "tgamectrl/tframe.h"
+#include "tgamectrl/timage.h"
 
 #include "AvatarInfoDlg.h"
 

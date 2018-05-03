@@ -1,6 +1,6 @@
 #ifndef _CMemoViewDlg_
 #define _CMemoViewDlg_
-#include "TDialog.h"
+#include "tgamectrl/tdialog.h"
 
 /**
 * 받은 쪽지 보기용 다이얼로그

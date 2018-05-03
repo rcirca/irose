@@ -15,10 +15,10 @@
 #include "../../../GameCommon/Item.h"
 
 
-#include "TDialog.h"
-#include "TCommand.h"
-#include "ActionEvent.h"
-#include "IActionListener.h"
+#include "tgamectrl/tdialog.h"
+#include "tgamectrl/tcommand.h"
+#include "tgamectrl/actionevent.h"
+#include "tgamectrl/iactionlistener.h"
 
 CSlot::CSlot(void)
 {

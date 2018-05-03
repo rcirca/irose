@@ -1,6 +1,6 @@
 #ifndef _CNotifyButtonDlg_
 #define _CNotifyButtonDlg_
-#include "TDialog.h"
+#include "tgamectrl/tdialog.h"
 #include <list>
 class CTButton;
 

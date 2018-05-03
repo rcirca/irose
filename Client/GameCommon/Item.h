@@ -3,7 +3,7 @@
 
 #include <list>
 #include "../Common/CItem.h"
-#include "../../TGameCtrl/TObject.h"
+#include "tgamectrl/tobject.h"
 #include "../interface/CInfo.h"
 
 class CIcon;

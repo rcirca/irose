@@ -3,8 +3,8 @@
 #include "../Command/CTCmdHotExec.h"
 #include "../../Network/CNetwork.h"
 #include "ExternalUILobby.h"
-#include "TListBox.h"
-#include "TMsgBox.h"
+#include "tgamectrl/tlistbox.h"
+#include "tgamectrl/tmsgbox.h"
 
 
 CSelectChannel::CSelectChannel(void)

@@ -9,7 +9,7 @@
 #include "../Interface/ExternalUI/ExternalUILobby.h"
 #include "../Interface/CLoading.h"
 #include "../Interface/CUIMediator.h"
-#include "../../TGameCtrl/TMsgBox.h"
+#include "tgamectrl/tmsgbox.h"
 
 static bool tDone = false;
 CGameStatePrepareSelectAvatar::CGameStatePrepareSelectAvatar( int iID )

@@ -3,8 +3,8 @@
 #include "../../Game.h"
 #include "../../Network/CNetwork.h"
 
-#include "TEditBox.h"
-#include "TButton.h"
+#include "tgamectrl/teditbox.h"
+#include "tgamectrl/tbutton.h"
 
 CMemoDlg::CMemoDlg( int iDlgType )
 {

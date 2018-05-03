@@ -9,7 +9,7 @@
 //#include "CKeyboard.h"
 #include "Network\CNetwork.h"
 #include "Game.h"
-#include "TGameCtrl.h"
+#include "tgamectrl/TGameCtrl.h"
 
 #include "Interface\\it_MGR.h"
 #include "System/CGame.h"
@@ -18,7 +18,7 @@
 #include "Sound/DirectMusicPlayer.h"
 #include "util/classMD5.h"
 
-#include "TIme2.h"
+#include "tgamectrl/time2.h"
 CApplication* CApplication::m_pInstance = NULL;
 
 

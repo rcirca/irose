@@ -1,7 +1,7 @@
 #ifndef _STOREDLG_
 #define _STOREDLG_
 
-#include "../../../TGameCtrl/TDialog.h"
+#include "tgamectrl/tdialog.h"
 #include "../../Common/CItem.h"
 #include "../../gamecommon/IObserver.h"
 #include "subclass/cslot.h"

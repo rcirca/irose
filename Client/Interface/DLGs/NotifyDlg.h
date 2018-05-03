@@ -1,6 +1,6 @@
 #ifndef _CNotifyDlg_
-#include "TDialog.h"
-#include "JStringParser.h"
+#include "tgamectrl/tdialog.h"
+#include "tgamectrl/JStringParser.h"
 
 /**
 * 알림버튼클릭시 해당 도움말을 표시하기 위한 다이얼로그 

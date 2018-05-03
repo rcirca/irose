@@ -1,6 +1,6 @@
 #ifndef _MemoDlg_
 #define _MemoDlg_
-#include "TDialog.h"
+#include "tgamectrl/tdialog.h"
 /**
 * 오프라인인 친구에게 메모보내기용 다이얼로그
 *

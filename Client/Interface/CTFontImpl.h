@@ -1,6 +1,6 @@
 #ifndef _CTFONTIMPL_
 #define _CTFONTIMPL_
-#include "../../TGameCtrl/ITFont.h"
+#include "tgamectrl/itfont.h"
 
 
 /**

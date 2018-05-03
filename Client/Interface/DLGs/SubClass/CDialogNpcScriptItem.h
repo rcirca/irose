@@ -1,8 +1,8 @@
 #ifndef _CDialogNpcScriptItem_
 #define _CDialogNpcScriptItem_
 
-#include "winctrl.h"
-#include "JStringParser.h"
+#include "tgamectrl/winctrl.h"
+#include "tgamectrl/JStringParser.h"
 /**
 * NPC와의 대화시 NPC SCRIPT가 출력되는 ZLISTBOX를 위한 Item Class
 *

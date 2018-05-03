@@ -1,7 +1,7 @@
 #ifndef _CDecompositionDlg_
 #define _CDecompositionDlg_
 
-#include "tdialog.h"
+#include "tgamectrl/tdialog.h"
 
 class CDecompositionDlg : public CTDialog
 {

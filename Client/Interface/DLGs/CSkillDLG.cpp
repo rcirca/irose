@@ -11,11 +11,11 @@
 #include "subclass/CSkillListItem.h"
 
 
-#include "JContainer.h"
-#include "TabbedPane.h"
-#include "TContainer.h"
-#include "JListBox.h"
-#include "TButton.h"
+#include "tgamectrl/jcontainer.h"
+#include "tgamectrl/tabbedpane.h"
+#include "tgamectrl/tcontainer.h"
+#include "tgamectrl/jlistbox.h"
+#include "tgamectrl/tbutton.h"
 
 #define SKILL_SLOT_SX		24
 #define SKILL_SLOT_SY		91
@@ -32,7 +32,7 @@
 #define SKILL_POINTTEXT_WIDTH	54
 #define SKILL_POINTTEXT_HEIGHT	19
 
-#include "ZListBox.h"
+#include "tgamectrl/zlistbox.h"
 CSkillDLG::CSkillDLG( int iType )
 {
 	m_iCurrentSkillTab	= TAB_BASIC;

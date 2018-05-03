@@ -8,8 +8,10 @@
 #pragma warning( disable : 4100 )
 //#pragma warning( disable : 4786 )
 
-#ifdef TGAMECTRL_EXPORTS
+#ifdef TGAMECTRL_DLL
 #define TGAMECTRL_API __declspec(dllexport)
+#elif TGAMECTRL_STATIC
+#define TGAMECTRL_API
 #else
 #define TGAMECTRL_API __declspec(dllimport)
 #endif

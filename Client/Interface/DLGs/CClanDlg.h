@@ -1,6 +1,6 @@
 #ifndef _CClanDlg_
 #define _CClanDlg_
-#include "tdialog.h"
+#include "tgamectrl/tdialog.h"
 #include "../../gamecommon/IObserver.h"
 #include "../CClanMarkUserDefined.h"
 

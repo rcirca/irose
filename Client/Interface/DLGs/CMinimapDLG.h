@@ -2,8 +2,8 @@
 #define _CMINIMAPDLG_
 
 
-#include "TDialog.h"
-#include "singlelinestring.h"
+#include "tgamectrl/tdialog.h"
+#include "tgamectrl/singlelinestring.h"
 class CTAnimation;
 
 /**

@@ -1,6 +1,6 @@
 #ifndef _AddFriendDlg_
 #define _AddFriendDlg_
-#include "TDialog.h"
+#include "tgamectrl/tdialog.h"
 /**
 * 친구추가시 이름 입력 다이얼로그
 * 

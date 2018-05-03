@@ -8,7 +8,7 @@
 #include "../GameData/Event/CTEventItem.h"
 #include "../GameData/Event/CTEventAvatarStore.h"
 
-#include "TCommand.h"
+#include "tgamectrl/tcommand.h"
 
 CDragNDropMgr::CDragNDropMgr(void)
 {

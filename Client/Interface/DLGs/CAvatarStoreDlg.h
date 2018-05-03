@@ -1,13 +1,13 @@
 #ifndef _CAvatarStoreDlg_
 #define _CAvatarStoreDlg_
-#include "TDialog.h"
+#include "tgamectrl/tdialog.h"
 #include "subclass/CSlot.h"
 #include "Net_Prototype.h"
 #include "../../GameCommon/CObservable.h"
 #include "../../GameData/Event/CTEventAvatarStore.h"
 
 
-#include "SinglelineString.h"
+#include "tgamectrl/singlelinestring.h"
 
 
 const int c_iAvatarStoreMaxSlotCount = 30;

@@ -1,5 +1,5 @@
 #ifndef _CClanOrganizeDlg_
-#include "tdialog.h"
+#include "tgamectrl/tdialog.h"
 
 /**
 * 클랜 창설시 사용되는 다이얼로그

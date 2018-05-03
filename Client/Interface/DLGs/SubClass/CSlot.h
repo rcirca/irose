@@ -2,7 +2,7 @@
 #define _CSLOT_
 
 
-#include "WinCtrl.h"
+#include "tgamectrl/winctrl.h"
 
 class CIcon;
 class CTCommand;

@@ -77,8 +77,8 @@
 #include "../Sound/MusicMgr.h"
 
 
-#include "ResourceMgr.h"
-#include "TIme2.h"
+#include "tgamectrl/resourcemgr.h"
+#include "tgamectrl/time2.h"
 
 #include "util/ijl.h"	
 #pragma comment (lib, "util/ijl15.lib")
