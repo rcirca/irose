@@ -92,8 +92,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
-      <BaseAddress>0x68000000</BaseAddress>
-      <ImportLibrary>$(IROSE_ROOT)/lib/$(Platform)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <BaseAddress>
+      </BaseAddress>
+      <ImportLibrary>
+      </ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
@@ -149,8 +151,10 @@
       </OptimizeReferences>
       <EnableCOMDATFolding>
       </EnableCOMDATFolding>
-      <BaseAddress>0x68000000</BaseAddress>
-      <ImportLibrary>$(IROSE_ROOT)/lib/$(Platform)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <BaseAddress>
+      </BaseAddress>
+      <ImportLibrary>
+      </ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
       <FixedBaseAddress>
       </FixedBaseAddress>
