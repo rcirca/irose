@@ -50,10 +50,20 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='release|Win32'" />
-    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='release|Win32'">false</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    </PostBuildEventUseInBuild>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(ProjectName)</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">$(ProjectName)</TargetName>
-    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">false</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    </PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <PreBuildEventUseInBuild />
+    <PreLinkEventUseInBuild />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <PreBuildEventUseInBuild />
+    <PreLinkEventUseInBuild />
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
     <ClCompile>
@@ -79,8 +89,10 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy $(OutDir)$(ProjectName).lib $(IROSE_ROOT)\lib\$(Platform)\$(Configuration) /s /Y</Command>
-      <Message>Not Usefull anymore</Message>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
     </PostBuildEvent>
     <Lib>
       <AdditionalDependencies>d3d9.lib;dxguid.lib;</AdditionalDependencies>
@@ -111,8 +123,10 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy $(OutDir)$(ProjectName).lib $(IROSE_ROOT)\lib\$(Platform)\$(Configuration) /s /Y</Command>
-      <Message>Not useful anymore</Message>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
     </PostBuildEvent>
     <Lib>
       <AdditionalDependencies>d3d9.lib;dxguid.lib;</AdditionalDependencies>
