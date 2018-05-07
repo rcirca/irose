@@ -3,7 +3,6 @@
 #include "..\\Object.h"
 #include "it_mgr.h"
 #include "IO_ImageRes.h"
-//#include "LookUpImageIndex.h"
 #include "InterfaceType.h"
 #include "CTDrawImpl.h"
 #include "CHelpMgr.h"
@@ -1146,10 +1145,6 @@ void IT_MGR::AppendChatMsg( const char* pszMsg, int iType ,DWORD forceapply_colo
 			dwColor = c_dwChatColorNotice;
 
 		iFilterType = CChatDLG::FILTER_SYSTEM;
-#ifdef FRAROSE
-		pChatDlg->AppendMsg2( pszMsg, dwColor, iFilterType );
-		return;
-#endif
 		break;
 	case CHAT_TYPE_SYSTEM:
 		if( forceapply_color )
@@ -1158,10 +1153,6 @@ void IT_MGR::AppendChatMsg( const char* pszMsg, int iType ,DWORD forceapply_colo
 			dwColor = c_dwChatColorSystem;
 
 		iFilterType = CChatDLG::FILTER_SYSTEM;
-#ifdef FRAROSE
-		pChatDlg->AppendMsg2( pszMsg, dwColor, iFilterType );
-		return;
-#endif
 		break;
 	case CHAT_TYPE_QUEST:
 		if( forceapply_color )
@@ -1170,10 +1161,6 @@ void IT_MGR::AppendChatMsg( const char* pszMsg, int iType ,DWORD forceapply_colo
 			dwColor = c_dwChatColorQuest;
 		
 		iFilterType = CChatDLG::FILTER_SYSTEM;
-#ifdef FRAROSE
-		pChatDlg->AppendMsg2( pszMsg, dwColor, iFilterType );
-		return;
-#endif
 		break;
 	case CHAT_TYPE_QUESTREWARD:
 		if( forceapply_color )
@@ -1182,10 +1169,6 @@ void IT_MGR::AppendChatMsg( const char* pszMsg, int iType ,DWORD forceapply_colo
 			dwColor = c_dwChatColorQuestReward;
 
 		iFilterType = CChatDLG::FILTER_SYSTEM;
-#ifdef FRAROSE
-		pChatDlg->AppendMsg2( pszMsg, dwColor, iFilterType );
-		return;
-#endif
 		break;
 	case CHAT_TYPE_TRADE:
 		if( forceapply_color )

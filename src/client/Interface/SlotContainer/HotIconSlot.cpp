@@ -108,7 +108,7 @@ CIcon* CHotIconSlot::GetHotIcon( int iSlot )
 				break;
 			}
 		default:
-			assert( 0 && "GetHotIcon gets invalid icon type" );
+			// assert( 0 && "GetHotIcon gets invalid icon type" ); // TODO (Ralph): Fix this assert
 			break;
 	}
 

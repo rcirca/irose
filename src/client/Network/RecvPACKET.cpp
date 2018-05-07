@@ -797,10 +797,6 @@ void CRecvPACKET::Recv_gsv_QUEST_DATA()
 
 	refGame.SetLoadingData(  data );
 	refGame.ChangeState( CGame::GS_MOVEMAIN );
-	
-	CChatDLG* pChatDLG = g_itMGR.GetChatDLG();
-	pChatDLG->AppendMsg2System((const char*)CStr::Printf("Welcome %s to Project Alpha", g_pAVATAR->Get_NAME()), 0xFF00FFFF);
-	pChatDLG->AppendMsg2System( "Have fun playing", 0xFFFFFF00);
 }
 
 //-------------------------------------------------------------------------------------------------

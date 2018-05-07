@@ -40,7 +40,7 @@ public :
 public:
 	int			Read( void *lpBuf, unsigned int nCount ) 
 	{ 
-		assert( m_dwMemPtr+nCount <= m_dwSize );
+		//assert( m_dwMemPtr+nCount <= m_dwSize ); // TODO (Ralph): Fix this assert
 		::CopyMemory( lpBuf, &m_pStream[ m_dwMemPtr ], nCount );
 		m_dwMemPtr += nCount;
 		return nCount;
