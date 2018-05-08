@@ -282,7 +282,7 @@ int APIENTRY WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmd
 	UINT iFullScreen = g_ClientStorage.GetVideoFullScreen();
 
 	g_pCApp->SetFullscreenMode( iFullScreen );
-	g_pCApp->CreateWND ("classCLIENT", "Project Alpha [loading]", Resolution.iWidth, Resolution.iHeight,Resolution.iDepth, hInstance);
+	g_pCApp->CreateWND ("classCLIENT", "Tsuki Online [loading]", Resolution.iWidth, Resolution.iHeight,Resolution.iDepth, hInstance);
 
 
 
