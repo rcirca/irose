@@ -18,20 +18,6 @@
 #define PACKET_SEED 0x6648495
 //-------------------------------------------------------------------------------------------------
 
-#ifdef __BORLANDC__
-	#pragma comment (lib, "LIB_Util.lib")
-	#pragma comment (lib, "LIB_Server.lib")
-#else
-	#ifdef	_DEBUG
-		#pragma comment (lib, "util_d.lib") 
-		#pragma comment (lib, "d_LIB_Server.lib") 
-	#else
-		#pragma comment (lib, "util_r.lib")
-		#pragma comment (lib, "LIB_Server.lib") 
-	#endif
-	#pragma comment (lib, "WS2_32.Lib" )
-#endif
-
 
 //-------------------------------------------------------------------------------------------------
 
