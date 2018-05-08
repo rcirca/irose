@@ -1,3 +1,55 @@
 *.[Ll][Ii][Bb] filter=lfs diff=lfs merge=lfs -text
 *.[Dd][Ll][Ll] filter=lfs diff=lfs merge=lfs -text
 *.[Ee][Xx][Pp] filter=lfs diff=lfs merge=lfs -text
+
+# Resource files
+*.[Cc][Uu][Rr] filter=lfs diff=lfs merge=lfs -text
+*.[Ii][Cc][Oo] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Aa][Ll] filter=lfs diff=lfs merge=lfs -text
+
+# DirectX file
+*.[Xx] filter=lfs diff=lfs merge=lfs -text
+
+# Image formats
+*.[Dd][Dd][Ss] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Ss][Dd] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Gg][Aa] filter=lfs diff=lfs merge=lfs -text
+
+# Audio files
+*.[Oo][Gg][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Ww][Aa][Vv] filter=lfs diff=lfs merge=lfs -text
+
+# Compiled Shaders
+*.[Pp][Ss][Oo] filter=lfs diff=lfs merge=lfs -text
+*.[Vv][Ss][Oo] filter=lfs diff=lfs merge=lfs -text
+
+# Rose Data Files
+*.[Aa][Ii][Pp] filter=lfs diff=lfs merge=lfs -text
+*.[Cc][Hh][Rr] filter=lfs diff=lfs merge=lfs -text
+*.[Cc][Oo][Nn] filter=lfs diff=lfs merge=lfs -text
+*.[Dd][Aa][Tt] filter=lfs diff=lfs merge=lfs -text
+*.[Ee][Ff][Tt] filter=lfs diff=lfs merge=lfs -text
+*.[Hh][Ii][Mm] filter=lfs diff=lfs merge=lfs -text
+*.[Hh][Ll][Pp] filter=lfs diff=lfs merge=lfs -text
+*.[Ii][Dd][Xx] filter=lfs diff=lfs merge=lfs -text
+*.[Ii][Ff][Oo] filter=lfs diff=lfs merge=lfs -text
+*.[Ll][Ii][Tt] filter=lfs diff=lfs merge=lfs -text
+*.[Ll][Oo][Dd] filter=lfs diff=lfs merge=lfs -text
+*.[Ll][Tt][Bb] filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Oo][Vv] filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Rr][Pp] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Tt][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Qq][Ss][Dd] filter=lfs diff=lfs merge=lfs -text
+*.[Ss][Tt][Bb] filter=lfs diff=lfs merge=lfs -text
+*.[Ss][Tt][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Bb][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Ii][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Ss][Ii] filter=lfs diff=lfs merge=lfs -text
+*.[Vv][Ff][Ss] filter=lfs diff=lfs merge=lfs -text
+*.[Zz][Cc][Aa] filter=lfs diff=lfs merge=lfs -text
+*.[Zz][Mm][Dd] filter=lfs diff=lfs merge=lfs -text
+*.[Zz][Mm][Oo] filter=lfs diff=lfs merge=lfs -text
+*.[Zz][Mm][Ss] filter=lfs diff=lfs merge=lfs -text
+*.[Zz][Oo][Nn] filter=lfs diff=lfs merge=lfs -text
+*.[Zz][Ss][Cc] filter=lfs diff=lfs merge=lfs -text
+
