@@ -40,9 +40,6 @@
     <ClCompile Include="LIB_gsMAIN.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Common\MiniDumper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GS_ThreadZONE.cpp">
       <Filter>Source Files\ZONE</Filter>
     </ClCompile>
@@ -101,9 +98,6 @@
       <Filter>Source Files\Network</Filter>
     </ClCompile>
     <ClCompile Include="Common\Calculation.cpp">
-      <Filter>Source Files\cli_COMMON</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Common\CAssertNew.cpp">
       <Filter>Source Files\cli_COMMON</Filter>
     </ClCompile>
     <ClCompile Include="Common\CEconomy.cpp">
@@ -184,6 +178,9 @@
     <ClCompile Include="md5.cpp">
       <Filter>Source Files\srv_COMMON</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\common\MiniDumper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AlphabetCvt\AlphabetCvt.h">
@@ -196,9 +193,6 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="LIB_gsMAIN.H">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Common\MiniDumper.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="stdAFX.h">
@@ -259,9 +253,6 @@
       <Filter>Source Files\Network</Filter>
     </ClInclude>
     <ClInclude Include="Common\Calculation.h">
-      <Filter>Source Files\cli_COMMON</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Common\CAssertNew.h">
       <Filter>Source Files\cli_COMMON</Filter>
     </ClInclude>
     <ClInclude Include="Common\CEconomy.h">
@@ -357,12 +348,8 @@
     <ClInclude Include="..\..\..\Common\SRV_Prototype.h">
       <Filter>Source Files\srv_COMMON</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DB구조.TXT" />
-    <None Include="구조설정서.txt" />
-    <None Include="버그수정사항.txt" />
-    <None Include="사용안하는 소스.txt" />
-    <None Include="서버정보.txt" />
+    <ClInclude Include="..\..\common\MiniDumper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

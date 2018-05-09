@@ -34,6 +34,15 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_ls_dll", "src\sho_ls\sh
 		{ABFAB753-FF1C-47E7-AA06-60FFCEC3C8FF} = {ABFAB753-FF1C-47E7-AA06-60FFCEC3C8FF}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_gs_lib", "src\sho_gs\sho_gs_lib\sho_gs_lib.vcxproj", "{782AF9C9-40B2-4844-BE58-D73710823F16}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_gs_dll", "src\sho_gs\sho_gs_dll\sho_gs_dll.vcxproj", "{48E6A734-BEC4-4317-9102-67A9A3C030E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF} = {B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}
+		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3} = {07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}
+		{782AF9C9-40B2-4844-BE58-D73710823F16} = {782AF9C9-40B2-4844-BE58-D73710823F16}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		debug|x86 = debug|x86
@@ -76,6 +85,14 @@ Global
 		{880C1CCD-606A-49B9-8891-2794EAB4167C}.debug|x86.Build.0 = Debug|Win32
 		{880C1CCD-606A-49B9-8891-2794EAB4167C}.release|x86.ActiveCfg = Release|Win32
 		{880C1CCD-606A-49B9-8891-2794EAB4167C}.release|x86.Build.0 = Release|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.debug|x86.ActiveCfg = Debug|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.debug|x86.Build.0 = Debug|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.release|x86.ActiveCfg = Release|Win32
+		{782AF9C9-40B2-4844-BE58-D73710823F16}.release|x86.Build.0 = Release|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.debug|x86.ActiveCfg = Debug|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.debug|x86.Build.0 = Debug|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.release|x86.ActiveCfg = Release|Win32
+		{48E6A734-BEC4-4317-9102-67A9A3C030E9}.release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

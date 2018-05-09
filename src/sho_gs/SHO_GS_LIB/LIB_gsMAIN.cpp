@@ -1,4 +1,3 @@
-
 #include "LIB_gsMAIN.h"
 #include "CSocketWND.h"
 
@@ -29,14 +28,6 @@
 #if defined(__N_PROTECT) && !defined(__NORTHUSA)
 	#include "../../../GG_SDK/CSAuth2/include/ggsrv.h"
 	#pragma comment (lib, "../../GG_SDK/CSAuth2/win32/ggsrvlib.lib" )
-#endif
-
-#ifdef	_DEBUG
-	#pragma comment (lib, "util_d.lib") 
-	#pragma comment (lib, "d_LIB_Server.lib") 
-#else
-	#pragma comment (lib, "util_r.lib")
-	#pragma comment (lib, "LIB_Server.lib") 
 #endif
 
 #define	TEST_ZONE_NO 100
