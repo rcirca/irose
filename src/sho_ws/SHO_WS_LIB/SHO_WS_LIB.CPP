@@ -18,16 +18,6 @@
 
 //-------------------------------------------------------------------------------------------------
 
-#ifdef	_DEBUG
-	#pragma comment (lib, "util_d.lib") 
-	#pragma comment (lib, "d_LIB_Server.lib") 
-#else
-	#pragma comment (lib, "util_r.lib")
-	#pragma comment (lib, "LIB_Server.lib") 
-#endif
-
-//-------------------------------------------------------------------------------------------------
-
 STBDATA			 g_TblHAIR;
 STBDATA			 g_TblFACE;
 STBDATA			 g_TblARMOR;

@@ -6,6 +6,8 @@
 [Dd]ebug/
 [Rr]elease/
 
+server/data/
+
 *.vcxproj.user
 *.sdf
 

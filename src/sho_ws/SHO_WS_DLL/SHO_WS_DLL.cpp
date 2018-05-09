@@ -16,15 +16,6 @@
 #pragma	comment	(lib, "WS2_32.LIB")
 
 
-#ifdef	_DEBUG
-	#pragma comment (lib, "util_d.lib") 
-	#pragma comment (lib, "d_LIB_Server.lib") 
-#else
-	#pragma comment (lib, "util_r.lib")
-	#pragma comment (lib, "LIB_Server.lib") 
-#endif
-
-
 //---------------------------------------------------------------------------------------
 static int s_iCalledCnt = 0;
 BOOL APIENTRY DllMain( HANDLE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved )
