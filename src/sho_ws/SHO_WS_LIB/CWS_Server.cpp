@@ -54,12 +54,12 @@ void CWS_Server::Init ()
 }
 void CWS_Server::Free ()
 {
-	// Á¢¼ÓµÈ¾î ÀÖ´ø »ç¿ëÀÚ »èÁ¦...
+	// ì ‘ì†ëœì–´ ìˆë˜ ì‚¬ìš©ì ì‚­ì œ...
 	CWS_Client *pClient;
 	for (short nI=0; nI<m_iUserBuffSIZE; nI++) {
 		if ( g_pUserLIST && m_ppChannelUSER[ nI ] ) {
-			// m_ppChannelUSER[ nI ]¸¦ ¹ŞÀ¸½Ã pClient·Î ¹Ş°í ¾Æ·¡ ÀÛ¾÷ÇØ¾ßÇÑ´Ù.
-			// È£Ãâ½Ã m_ppChannelUSER[ nI ] == NULLÀÌ µÇ±â¶§¹®¿¡...
+			// m_ppChannelUSER[ nI ]ë¥¼ ë°›ìœ¼ì‹œ pClientë¡œ ë°›ê³  ì•„ë˜ ì‘ì—…í•´ì•¼í•œë‹¤.
+			// í˜¸ì¶œì‹œ m_ppChannelUSER[ nI ] == NULLì´ ë˜ê¸°ë•Œë¬¸ì—...
 			pClient = m_ppChannelUSER[ nI ];
 			pClient->LockSOCKET ();
 			{
@@ -81,7 +81,7 @@ void CWS_Server::Free ()
 	this->Clear_LIST ();
 }
 
-#define	DIFF_USER_PERCENT	2	// 2%ÀÌ»ó Â÷ÀÌ³ª¸é ·Î±×ÀÎ ¼­¹ö¿¡ Àü¼Û
+#define	DIFF_USER_PERCENT	2	// 2%ì´ìƒ ì°¨ì´ë‚˜ë©´ ë¡œê·¸ì¸ ì„œë²„ì— ì „ì†¡
 void CWS_Server::AddChannelCLIENT( DWORD dwGSClientIDX, CWS_Client *pClient )	
 {	
 	m_iCurUserCNT ++;
@@ -107,7 +107,7 @@ void CWS_Server::AddChannelCLIENT( DWORD dwGSClientIDX, CWS_Client *pClient )
 	pClient->Set_GSID( dwGSClientIDX );
 	m_ppChannelUSER[ dwGSClientIDX ] = pClient;	
 
-	// Á¸¼­¹ö¿¡ Ãß°¡ µÆÀ¸¹Ç·Î.....
+	// ì¡´ì„œë²„ì— ì¶”ê°€ ëìœ¼ë¯€ë¡œ.....
 	g_pThreadGUILD->Add_ClanCMD( GCMD_LOGIN, pClient->m_iSocketIDX, NULL, pClient->Get_NAME() );
 }
 void CWS_Server::SubChannelCLIENT( CWS_Client *pClient ) 
@@ -190,7 +190,7 @@ bool CWS_Server::Recv_zws_SERVER_INFO (t_PACKET *pPacket)
     szServerIP   = Packet_GetStringPtr (pPacket, nOffset);
 
     this->m_ServerNAME.Set( szServerName );
-    if ( *szServerIP )
+    if ( szServerIP != NULL && *szServerIP )
         this->m_ServerIP.Set( szServerIP );
     else
         this->m_ServerIP.Set( this->m_IP.Get() );
@@ -271,7 +271,7 @@ bool CWS_Server::Recv_zws_CONFIRM_ACCOUNT_REQ( t_PACKET *pPacket )
 {
 	CWS_Client *pCLIENT = (CWS_Client*)g_pUserLIST->GetSOCKET( pPacket->m_zws_CONFIRM_ACCOUNT_REQ.m_dwServerID );
 	if ( NULL == pCLIENT || NULL == pCLIENT->m_pAccount || 0 == pCLIENT->m_HashACCOUNT ) {
-        // ¸øÃ£¾Ò´Ù...
+        // ëª»ì°¾ì•˜ë‹¤...
         return this->Send_wls_CONFIRM_ACCOUNT_REPLY( RESULT_CONFIRM_ACCOUNT_FAILED,
                         pPacket->m_zws_CONFIRM_ACCOUNT_REQ.m_dwServerID,
                         pPacket->m_zws_CONFIRM_ACCOUNT_REQ.m_dwClientID, 0 );
@@ -279,7 +279,7 @@ bool CWS_Server::Recv_zws_CONFIRM_ACCOUNT_REQ( t_PACKET *pPacket )
 
     for (short nI=0; nI<8; nI++)
         if ( pCLIENT->m_dwMD5Password[ nI ] != pPacket->m_zws_CONFIRM_ACCOUNT_REQ.m_dwMD5Password[ nI ] ) {
-            // ºñ¹Ğ¹øÈ£ ¿À·ù !!! ÀÌ·± °æ¿ì°¡ ... ÇØÅ· ???
+            // ë¹„ë°€ë²ˆí˜¸ ì˜¤ë¥˜ !!! ì´ëŸ° ê²½ìš°ê°€ ... í•´í‚¹ ???
 			pCLIENT->CloseSocket ();
 			g_LOG.CS_ODS(0xffff, "??? Mismatch LS<->WS password, account: %s, char: %s \n", pCLIENT->Get_ACCOUNT(), pCLIENT->Get_NAME() );
 
@@ -291,7 +291,7 @@ bool CWS_Server::Recv_zws_CONFIRM_ACCOUNT_REQ( t_PACKET *pPacket )
 	pCLIENT->m_pAccount->Add_GSBit( pPacket->m_zws_CONFIRM_ACCOUNT_REQ.m_dwClientID );
 	this->AddChannelCLIENT( pPacket->m_zws_CONFIRM_ACCOUNT_REQ.m_dwClientID, pCLIENT );	// Recv_zws_CONFIRM_ACCOUNT_REQ
 
-	// "ÆÄÆ¼ Â¯ÀÌ¸é Á¸ ¼­¹ö¿¡ ÇöÀç ÆÄÆ¼ÀÇ °æÄ¡,·¾À» °°ÀÌ Àü¼Û ½ÃÅ²´Ù"
+	// "íŒŒí‹° ì§±ì´ë©´ ì¡´ ì„œë²„ì— í˜„ì¬ íŒŒí‹°ì˜ ê²½ì¹˜,ë ™ì„ ê°™ì´ ì „ì†¡ ì‹œí‚¨ë‹¤"
     return this->Send_wls_CONFIRM_ACCOUNT_REPLY( RESULT_CONFIRM_ACCOUNT_OK,
                     pPacket->m_zws_CONFIRM_ACCOUNT_REQ.m_dwServerID,
                     pPacket->m_zws_CONFIRM_ACCOUNT_REQ.m_dwClientID,
@@ -313,7 +313,7 @@ bool CWS_Server::Recv_zws_SUB_ACCOUNT( t_PACKET *pPacket )
 /*
 bool CWS_Server::Recv_gsv_WARP_USER( t_PACKET *pPacket )
 {
-	// ¼­¹ö¿¡¼­ ÀÌ ÆĞÅ¶ÀÌ ¿À¸é Å¬¶óÀÌ¾ğÆ®ÀÇ Á¢¼ÓÀº 100% ²÷±ä´Ù.
+	// ì„œë²„ì—ì„œ ì´ íŒ¨í‚·ì´ ì˜¤ë©´ í´ë¼ì´ì–¸íŠ¸ì˜ ì ‘ì†ì€ 100% ëŠê¸´ë‹¤.
 
 	CWS_Client *pCLIENT = (CWS_Client*)g_pUserLIST->GetSOCKET( pPacket->m_gsv_WARP_USER.m_dwWSID );
 	if ( pCLIENT ) {
@@ -330,11 +330,11 @@ bool CWS_Server::Recv_gsv_WARP_USER( t_PACKET *pPacket )
 
 		assert( pCLIENT->Get_GSID() && "Recv_gsv_WARP_USER" );
 
-		// ÇöÀçÁ¸¿¡¼­ »èÁ¦... ´ë±âÁ¸ ¤¤pPacket->m_gsv_WARP_USER.m_nZoneNO
+		// í˜„ì¬ì¡´ì—ì„œ ì‚­ì œ... ëŒ€ê¸°ì¡´ ã„´pPacket->m_gsv_WARP_USER.m_nZoneNO
 		this->SubZoneCLIENT( pCLIENT );		// Recv_gsv_WARP_USER
-		// ¼Ò¼ÓµÈ ÆÄÆ¼°¡ ÀÖ´Ù.
+		// ì†Œì†ëœ íŒŒí‹°ê°€ ìˆë‹¤.
 		//if ( pCLIENT->Get_PARTY() ) {
-		//	// ÆÄÆ¼ ÀÎ¿ø¼ö °¨¼Ò.
+		//	// íŒŒí‹° ì¸ì›ìˆ˜ ê°ì†Œ.
 		//	this->SubPartyUserCNT( pCLIENT->Get_PARTY()->m_wPartyWSID );
 		//}
 	}
@@ -380,7 +380,7 @@ bool CWS_Server::Recv_gsv_CHEAT_REQ( t_PACKET *pPacket )
 
 	if ( pArg1 ) {
 		if ( !strcmpi( pToken, "/w" ) ) {
-			// ¼­¹ö¿¡¼­ »ç¿ëÀÚ¿¡°Ô ±Ó¼Ó¸» Àü¼Û...
+			// ì„œë²„ì—ì„œ ì‚¬ìš©ìì—ê²Œ ê·“ì†ë§ ì „ì†¡...
 			CWS_Client *pORDER = (CWS_Client*)g_pUserLIST->GetSOCKET( pPacket->m_gsv_CHEAT_REQ.m_dwReqUSER );
 			if ( pORDER ) {
 				pORDER->Send_gsv_WHISPER( "]", &szCode[3] );
@@ -425,7 +425,7 @@ bool CWS_Server::Recv_gsv_CHEAT_REQ( t_PACKET *pPacket )
 				if ( !strcmpi(pArg1, "exp") ) {
 					pArg3 = m_TmpStr.GetTokenNext (pDelimiters);
 					if ( pArg3 ) {
-						// °æÇèÄ¡¸¦ ¿Ã·ÁÁÙ ´ë»óÀÌ ÀÖ´Â°¡ ?
+						// ê²½í—˜ì¹˜ë¥¼ ì˜¬ë ¤ì¤„ ëŒ€ìƒì´ ìˆëŠ”ê°€ ?
 						CWS_Client *pUSER = g_pUserLIST->Find_CHAR( pArg3 );
 						if ( pUSER && pUSER->GetSERVER() ) {
 							pUSER->GetSERVER()->Send_wsv_CHEAT_REQ( pPacket, 0, pUSER->Get_GSID(), szCode );
@@ -435,7 +435,7 @@ bool CWS_Server::Recv_gsv_CHEAT_REQ( t_PACKET *pPacket )
 			}
 		} else
 		if ( !strcmpi( pToken, "/na" ) ) {
-			// Á¸¼­¹öµé¿¡°Ô ÀüÃ¼ °øÁö
+			// ì¡´ì„œë²„ë“¤ì—ê²Œ ì „ì²´ ê³µì§€
 			if ( pPacket->m_gsv_CHEAT_REQ.m_dwReqUSER ) {
 				CWS_Client *pORDER = (CWS_Client*)g_pUserLIST->GetSOCKET( pPacket->m_gsv_CHEAT_REQ.m_dwReqUSER );
 				if ( pORDER ) 
@@ -445,7 +445,7 @@ bool CWS_Server::Recv_gsv_CHEAT_REQ( t_PACKET *pPacket )
 			}
 		} else
 		if ( !strcmpi( pToken, "/out" ) ) {
-			// °­Á¦ Á¢¼Ó Á¾·á...
+			// ê°•ì œ ì ‘ì† ì¢…ë£Œ...
 			pArg2 = m_TmpStr.GetTokenNext (pDelimiters);	// account
 
 			CWS_Client *pUSER=NULL;
@@ -460,7 +460,7 @@ bool CWS_Server::Recv_gsv_CHEAT_REQ( t_PACKET *pPacket )
 			}
 		} else
 		if ( !strcmpi( pToken, "/shut" ) ) {
-			// ¸»ÇÏ±â ±İÁö...
+			// ë§í•˜ê¸° ê¸ˆì§€...
 			pArg2 = m_TmpStr.GetTokenNext (pDelimiters);		// block time
 			pArg3 = NULL;
 			WORD wBlockTIME = 1;
@@ -483,7 +483,7 @@ bool CWS_Server::Recv_gsv_CHEAT_REQ( t_PACKET *pPacket )
 			}
 		} else
 		if ( !strcmpi( pToken, "/account" ) ) {
-			// ÄÉ¸¯ ÀÌ¸§À¸·Î °èÁ¤ ¾ò±â
+			// ì¼€ë¦­ ì´ë¦„ìœ¼ë¡œ ê³„ì • ì–»ê¸°
 			CWS_Client *pUSER=NULL;
 			pUSER = g_pUserLIST->Find_CHAR( pArg1 );
 			if ( pUSER ) {
@@ -529,7 +529,7 @@ bool CWS_Server::Recv_gsv_CHEAT_REQ( t_PACKET *pPacket )
 		}
 	} else
 	if ( !strcmpi( pToken, "/call_r" ) ) {
-		// /move¿¡ ´ëÇÑ GSVÀÇ ÀÀ´ä :: ¿äÃ»°¡ ÀÖ´Â ¼­¹ö·Î ..
+		// /moveì— ëŒ€í•œ GSVì˜ ì‘ë‹µ :: ìš”ì²­ê°€ ìˆëŠ” ì„œë²„ë¡œ ..
 		CWS_Client *pUSER = (CWS_Client*)g_pUserLIST->GetSOCKET( pPacket->m_gsv_CHEAT_REQ.m_dwReqUSER );
 		if ( pUSER ) {
 			pUSER->GetSERVER()->Send_wsv_CHEAT_REQ( pPacket, 0, pUSER->Get_GSID(), "/call" );
@@ -598,19 +598,19 @@ bool CWS_Server::Recv_gsv_ADJ_CLAN_VAR( t_PACKET *pPacket )
 }
 
 //-------------------------------------------------------------------------------------------------
-// Á¸ ¼­¹ö·Î ºÎÅÍ ¹ŞÀº ÆĞÅ¶...
+// ì¡´ ì„œë²„ë¡œ ë¶€í„° ë°›ì€ íŒ¨í‚·...
 bool CWS_Server::HandlePACKET (t_PACKETHEADER *pPacket )
 {
 //    LogString (LOG_DEBUG, "        >> %d CWS_Server::HandlePACKET:: Type: 0x%x, Length: %d\n", this->m_iSocketIDX, pPacket->m_wType, pPacket->m_nSize);
 
     switch ( pPacket->m_wType ) {
-		case ZWS_SERVER_INFO :		// Á¸¼­¹ö Á¤º¸.
+		case ZWS_SERVER_INFO :		// ì¡´ì„œë²„ ì •ë³´.
 			return Recv_zws_SERVER_INFO( (t_PACKET*)pPacket );
 
 		case ZWS_CONFIRM_ACCOUNT_REQ :
 			return Recv_zws_CONFIRM_ACCOUNT_REQ( (t_PACKET*)pPacket );
 
-		case ZWS_SUB_ACCOUNT :		// Á¸¼­¹ö¿¡¼­ ²÷°å´Ù.
+		case ZWS_SUB_ACCOUNT :		// ì¡´ì„œë²„ì—ì„œ ëŠê²¼ë‹¤.
 			return Recv_zws_SUB_ACCOUNT( (t_PACKET*)pPacket );	
 
 		case ZWS_ACCOUNT_LIST :
@@ -710,7 +710,7 @@ void CWS_ListSERVER::Set_ChannelACTIVE( int iChannelNo, bool bActive, bool bTogg
 		m_ppChannelSERVER[ iChannelNo ]->UnlockLI ();
 	this->UnlockLIST ();
 
-	// ·Î±×ÀÎ ¼­¹ö¿¡ Ã¤³Î¸®½ºÆ® Àü¼Û.
+	// ë¡œê·¸ì¸ ì„œë²„ì— ì±„ë„ë¦¬ìŠ¤íŠ¸ ì „ì†¡.
 	g_pSockLSV->Send_wls_CHANNEL_LIST ();
 }
 
@@ -728,7 +728,7 @@ bool CWS_ListSERVER::Set_ChannelSERVER( BYTE btChannelNO, CWS_Server *pServer )
 			m_nChannelCNT --;
 	this->UnlockLIST ();
 
-	// ·Î±×ÀÎ ¼­¹ö¿¡ Ã¤³Î¸®½ºÆ® Àü¼Û.
+	// ë¡œê·¸ì¸ ì„œë²„ì— ì±„ë„ë¦¬ìŠ¤íŠ¸ ì „ì†¡.
 	g_pSockLSV->Send_wls_CHANNEL_LIST ();
 
 	return true;
