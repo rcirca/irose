@@ -1,4 +1,4 @@
-# Tsuki Online
+# Rose Online
 
 ## Setup
 ### Requirements
@@ -66,7 +66,7 @@ EditPW=sa                           // Password for `SHO` user
 #### SHO_WS.ini
 ```
 [FormDataDIR]
-EditDataDIR=C:\dev\tsukionline\server\data  // Full path to the server data folder
+EditDataDIR=C:\dev\rose\server\data  // Full path to the server data folder
 EditWaitTIME=1                              // Delay before starting world server
 ComboBoxLANG=8                              // *Deprecated* (Selects language)
 item_0ComboBoxLANG=Korean
@@ -85,7 +85,7 @@ EditLoginServerIP=127.0.0.1                 // IP for the login server (use exte
 EditLoginServerPORT=19000                   // Port for the login server, must match SHO_LS.ini
 EditUserListenPORT=29100                    // Port to listen for client requests
 EditExtIP=127.0.0.1                         // External IP address (make sure to set this so others can join)
-EditWorldNAME=1Tsuki-local                  // World name, number is prepended to sort the names on the list
+EditWorldNAME=1Rose-local                  // World name, number is prepended to sort the names on the list
 EditDBServerIP=127.0.0.1                    // Database IP
 EditDBTableNAME=SHO
 EditDBAccount=sho
@@ -98,7 +98,7 @@ CheckBoxCreateCHAR=0                        // Enable/disable character creation
 #### SHO_GS.ini
 ```
 [FormDataDIR]
-EditDataDIR=C:\dev\tsukionline\server\data  // Full path to the server data folder
+EditDataDIR=C:\dev\rose\server\data  // Full path to the server data folder
 EditWaitTIME=1                              // Delay before starting game server
 ComboBoxLANG=9                              // *Deprecated* (Selects language)
 item_0ComboBoxLANG=Korean

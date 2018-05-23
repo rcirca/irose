@@ -730,7 +730,7 @@ void CRecvPACKET::Recv_gsv_SELECT_CHAR ()
 	szName = Packet_GetStringPtr( m_pRecvPacket, nOffset);
 
 	//Dagnarus
-	g_pCApp->SetCaption( CStr::Printf("Tsuki Online [ %s ]", szName));
+	g_pCApp->SetCaption( CStr::Printf("ROSE Online [ %s ]", szName));
 
 	LogString (LOG_NORMAL, "\n\n\n>>> AVATER( %s ) : Zone: %d, Pos: %f, %f <<<\n\n\n\n",
 		szName, 

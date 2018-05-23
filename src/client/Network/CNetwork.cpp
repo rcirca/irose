@@ -133,7 +133,7 @@ void CNetwork::Proc_WorldPacket ()
 						}
 						//Dagnarus
 						//g_pCApp->SetCaption ( "ROSE online" );
-						g_pCApp->SetCaption("Tsuki Online"); 
+						g_pCApp->SetCaption("ROSE Online"); 
 					#ifdef	__VIRTUAL_SERVER
 						g_pCApp->ErrorBOX( "가상 서버가 설정되어 있음..", "ERROR !!!", MB_OK);
 					#endif

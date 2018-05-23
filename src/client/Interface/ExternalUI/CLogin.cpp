@@ -114,7 +114,7 @@ UINT CLogin::Process( UINT uiMsg, WPARAM wParam, LPARAM lParam )
 	if( !IsVision())
 		return Ret;
 	//Dagnarus
-	g_pCApp->SetCaption( CStr::Printf("Tsuki Online [Login]"));
+	g_pCApp->SetCaption( CStr::Printf("ROSE Online [Login]"));
 	CWinCtrl*  pCtrl	= NULL;
 	CTEditBox* pEditBox = NULL;
 
@@ -493,7 +493,7 @@ void CLogin::Draw()
 #ifndef FRAROSE
 	//Dagnarus
 	//drawFont( g_GameDATA.m_hFONT[ FONT_NORMAL_OUTLINE ], true, 0,0, g_dwWHITE, CStr::Printf("Version : %s",CGame::GetInstance().GetClientFileVersion().c_str() ));
-	drawFont( g_GameDATA.m_hFONT[ FONT_NORMAL_OUTLINE ], true, 0, 0, g_dwWHITE, CStr::Printf("Project Alpha, Welcome!"));
+	drawFont( g_GameDATA.m_hFONT[ FONT_NORMAL_OUTLINE ], true, 0, 0, g_dwWHITE, CStr::Printf("ROSE Online, Welcome!"));
 #else
 	drawFont( g_GameDATA.m_hFONT[ FONT_NORMAL_OUTLINE ], true, 0,0, g_dwWHITE, CStr::Printf("FraRose Online Version 0.9"));
 #endif

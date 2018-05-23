@@ -28,6 +28,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_server", "src\lib_server\lib_server.vcxproj", "{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_ls_lib", "src\sho_ls\sho_ls_lib\sho_ls_lib.vcxproj", "{ABFAB753-FF1C-47E7-AA06-60FFCEC3C8FF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF} = {B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}
+		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3} = {07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_ls_dll", "src\sho_ls\sho_ls_dll\sho_ls_dll.vcxproj", "{880C1CCD-606A-49B9-8891-2794EAB4167C}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -35,6 +39,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_ls_dll", "src\sho_ls\sh
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_gs_lib", "src\sho_gs\sho_gs_lib\sho_gs_lib.vcxproj", "{782AF9C9-40B2-4844-BE58-D73710823F16}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF} = {B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}
+		{07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3} = {07F4D39F-4AAF-4848-BEC1-F0FB9A7A69B3}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_gs_dll", "src\sho_gs\sho_gs_dll\sho_gs_dll.vcxproj", "{48E6A734-BEC4-4317-9102-67A9A3C030E9}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -44,6 +52,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_gs_dll", "src\sho_gs\sh
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_ws_lib", "src\sho_ws\sho_ws_lib\sho_ws_lib.vcxproj", "{A4BD70F5-CE47-4747-8723-72C37983D063}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B4DDE42E-8878-441E-87AE-62B2F0E5A9CF} = {B4DDE42E-8878-441E-87AE-62B2F0E5A9CF}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sho_ws_dll", "src\sho_ws\sho_ws_dll\sho_ws_dll.vcxproj", "{59368FFB-7EDD-46E7-BD58-19EC6415BB1D}"
 EndProject
